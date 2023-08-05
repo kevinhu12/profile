@@ -1,4 +1,8 @@
 // Imports
+import React from 'react';
+import Container from '@mui/material/Container';
+
+import { Navbar } from '../shared/Navbar';
 
 // Styled components
 
@@ -8,7 +12,9 @@ const Home = ({
 }) => {
     
     return (
-        <div>test</div>
+        <Container>
+            <Navbar />
+        </Container>
     );
 }
 export default Home;
