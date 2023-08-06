@@ -10,6 +10,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { Menu } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 // Constants
 const pages = ['About Me', 'Projects', 'Hobbies'];
@@ -20,6 +21,7 @@ const pages = ['About Me', 'Projects', 'Hobbies'];
 export const Navbar = ({
 
 }) => {
+    const theme = useTheme();
 
     // Anchor states and handler functions (for smaller screens)
     const [anchorEl, setAnchorEl] = useState(null);
@@ -43,7 +45,7 @@ export const Navbar = ({
     }
     
     return (
-        <AppBar position="static">
+        <AppBar position="static" sx={{ background: theme.palette.background.navbar }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
 
