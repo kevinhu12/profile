@@ -45,7 +45,7 @@ export const Navbar = ({
     }
     
     return (
-        <AppBar position="static" sx={{ background: theme.palette.background.navbar }}>
+        <AppBar position="static" sx={{ background: theme.palette.background.secondary }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
 

@@ -15,7 +15,7 @@ const BasePage = ({
     const theme = useTheme();
     
     return (
-        <Container maxWidth={false} style={{ background: theme.palette.background.default }}>
+        <Container maxWidth={false} style={{ background: theme.palette.background.primary }}>
             <Navbar />
             <Home />
         </Container>

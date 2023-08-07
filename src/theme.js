@@ -4,12 +4,16 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
     palette: {
         background: {
-            default: '#043565',
+            primary: '#051014',
+            secondary: '#333333',
             navbar: '#E33E7F'
         },
         primary: {
             main: '#FFFFFF'
         },
+        secondary: {
+            main: '#cddddd'
+        }
     },
     spacingValues: {
         box: 1
