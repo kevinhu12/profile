@@ -5,6 +5,7 @@ import { useTheme } from '@mui/material/styles';
 
 import { Navbar } from './Navbar';
 import Home from '../sections/Home';
+import WorkExperience from '../sections/WorkExperience';
 
 // Styled components
 
@@ -18,6 +19,7 @@ const BasePage = ({
         <Container maxWidth={false} style={{ background: theme.palette.background.primary }}>
             <Navbar />
             <Home />
+            <WorkExperience />
         </Container>
     );
 }

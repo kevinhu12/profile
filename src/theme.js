@@ -8,12 +8,8 @@ const theme = createTheme({
             secondary: '#333333',
             navbar: '#E33E7F'
         },
-        primary: {
-            main: '#FFFFFF'
-        },
-        secondary: {
-            main: '#cddddd'
-        }
+        primary: { main: '#FFFFFF' }, // White
+        secondary: { main: '#cddddd' } // Blue-ish gray
     },
     spacingValues: {
         box: 1
