@@ -4,6 +4,7 @@ import Container from '@mui/material/Container';
 import { useTheme } from '@mui/material/styles';
 
 import { Navbar } from './Navbar';
+import AboutMe from '../sections/AboutMe';
 import Home from '../sections/Home';
 import TechnicalSkills from '../sections/TechnicalSkills';
 import Transition from '../sections/Transition';
@@ -24,6 +25,7 @@ const BasePage = ({
             <WorkExperience />
             <Transition />
             <TechnicalSkills />
+            <AboutMe />
         </Container>
     );
 }
