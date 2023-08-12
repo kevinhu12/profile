@@ -6,7 +6,8 @@ const theme = createTheme({
         background: {
             primary: '#051014',
             secondary: '#333333',
-            navbar: '#E33E7F'
+            navbar: '#E33E7F',
+            transition: '#FFF3E4'
         },
         primary: { main: '#FFFFFF' }, // White
         secondary: { main: '#cddddd' } // Blue-ish gray
