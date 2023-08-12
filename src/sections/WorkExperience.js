@@ -6,8 +6,6 @@ import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 
-import testimg from '../logo512.png';
-
 // Constants
 const jobExperience = [
     {

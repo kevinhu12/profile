@@ -5,6 +5,7 @@ import { useTheme } from '@mui/material/styles';
 
 import { Navbar } from './Navbar';
 import Home from '../sections/Home';
+import TechnicalSkills from '../sections/TechnicalSkills';
 import WorkExperience from '../sections/WorkExperience';
 
 // Styled components
@@ -20,6 +21,7 @@ const BasePage = ({
             <Navbar />
             <Home />
             <WorkExperience />
+            <TechnicalSkills />
         </Container>
     );
 }
