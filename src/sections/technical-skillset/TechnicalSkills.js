@@ -7,42 +7,11 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 
-import AddCircleIcon from '@mui/icons-material/AddCircle'
-
-// Constants
-const languages = [
-    {
-        name: 'C#',
-        description: 'My language of choice!',
-        icon: 'placeholder'
-    },
-    {
-        name: 'JavaScript & TypeScript',
-        description: 'idk',
-        icon: 'placeholder'
-    }
-];
-
-// Component for a single language
-const Language = ({
-    language
-}) => (
-    <Grid container>
-        <Grid xs={12}>
-            <Stack direction='row' alignItems='center'>
-                <AddCircleIcon />
-                <Typography color='secondary' variant='h6'>
-                    {language.name}
-                </Typography>
-            </Stack>
-        </Grid>
-        <Grid xs={12}>
-            <Typography color='secondary' variant='body2'>
-                {language.description}
-            </Typography>
-        </Grid>
-    </Grid>
-);
+import LanguageSection from './LanguageSection';
+import { 
+    descriptions,
+    languages 
+} from './constants';
 
 // Main component
 const TechnicalSkills = ({
@@ -62,27 +31,22 @@ const TechnicalSkills = ({
                     <Typography color='primary' variant='h5'>
                         Languages and Frameworks
                     </Typography>
-                    <Typography color='primary' variant='body1'>
-                        My most familiar languages, and the frameworks that accompany them.
+                    <Typography color='primary' variant='body1' sx={{ mt: 1 }}>
+                        {descriptions.languages}
                     </Typography>
                 </Grid>
-                <Grid xs={4}>
-                    <Language
-                        language={languages[0]}
-                    />
-                </Grid>
-                <Grid xs={4}>
-                    <Language
-                        language={languages[1]}
-                    />
-                </Grid>
+                {languages.map((language, idx) => (
+                    <Grid xs={4}>
+                        <LanguageSection language={language} />
+                    </Grid>
+                ))}
 
                 <Grid xs={12}>
                     <Typography color='primary' variant='h5'>
                         Tools and Database Management
                     </Typography>
-                    <Typography color='primary' variant='body1'>
-                        Some databases and general coding tools I have used
+                    <Typography color='primary' variant='body1' sx={{ mt: 1 }}>
+                        {descriptions.tools}
                     </Typography>
                 </Grid>
                 <Grid xs={6}>
