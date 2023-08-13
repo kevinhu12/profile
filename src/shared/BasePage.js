@@ -8,7 +8,7 @@ import AboutMe from '../sections/AboutMe';
 import Home from '../sections/Home';
 import TechnicalSkills from '../sections/TechnicalSkills';
 import Transition from '../sections/Transition';
-import WorkExperience from '../sections/WorkExperience';
+import WorkExperience from '../sections/work-experience/WorkExperience';
 
 // Styled components
 
