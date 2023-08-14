@@ -3,11 +3,12 @@ import React from 'react';
 
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
-
-import AddCircleIcon from '@mui/icons-material/AddCircle'
 
 // Component for a single language
 const LanguageSection = ({
@@ -16,7 +17,12 @@ const LanguageSection = ({
     <Grid container>
         <Grid xs={12}>
             <Stack direction='row' alignItems='center'>
-                <AddCircleIcon />
+                <Box
+                    alt='My picture'
+                    component='img'
+                    src={language.icon}
+                    sx={{ height: 45, width: 40 }}
+                />
                 <Typography color='secondary' variant='h6'>
                     {language.name}
                 </Typography>
@@ -26,6 +32,20 @@ const LanguageSection = ({
             <Typography color='secondary' variant='body2'>
                 {language.description}
             </Typography>
+        </Grid>
+        <Grid xs={12} sx={{ mt: 1 }}>
+            <List dense={true}>
+                {language.frameworks.map((framework) => (
+                    <ListItem>
+                        {/* <ListItemAvatar>
+                            <Avatar>
+                                <Icon />
+                            </Avatar>
+                        </ListItemAvatar> */}
+                        <ListItemText primary={framework.name} primaryTypographyProps={{ color: 'primary' }} />
+                    </ListItem>
+                ))}
+            </List>
         </Grid>
     </Grid>
 );

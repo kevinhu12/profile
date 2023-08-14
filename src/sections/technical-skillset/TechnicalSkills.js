@@ -3,14 +3,19 @@ import React from 'react';
 
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
-import Stack from '@mui/material/Stack';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 
 import LanguageSection from './LanguageSection';
 import { 
+    additionalLanguages,
+    databases,
     descriptions,
-    languages 
+    languages,
+    tools
 } from './constants';
 
 // Main component
@@ -34,6 +39,22 @@ const TechnicalSkills = ({
                     <Typography color='primary' variant='body1' sx={{ mt: 1 }}>
                         {descriptions.languages}
                     </Typography>
+                    <Typography color='primary' variant='body1' sx={{ mt: 3 }}>
+                        {descriptions.additionalLanguages}
+                    </Typography>
+                    <List dense={true}>
+                        {/* TODO: Make a shared component for the icons + list stuff */}
+                        {additionalLanguages.map((language) => (
+                            <ListItem>
+                                {/* <ListItemAvatar>
+                                    <Avatar>
+                                        <Icon />
+                                    </Avatar>
+                                </ListItemAvatar> */}
+                                <ListItemText primary={language} primaryTypographyProps={{ color: 'primary' }} />
+                            </ListItem>
+                        ))}
+                    </List>
                 </Grid>
                 {languages.map((language, idx) => (
                     <Grid xs={4}>
@@ -53,11 +74,35 @@ const TechnicalSkills = ({
                     <Typography color='secondary' variant='h6'>
                         Database
                     </Typography>
+                    <List dense={true}>
+                        {databases.map((database) => (
+                            <ListItem>
+                                {/* <ListItemAvatar>
+                                    <Avatar>
+                                        <Icon />
+                                    </Avatar>
+                                </ListItemAvatar> */}
+                                <ListItemText primary={database} primaryTypographyProps={{ color: 'primary' }} />
+                            </ListItem>
+                        ))}
+                    </List>
                 </Grid>
                 <Grid xs={6}>
                     <Typography color='secondary' variant='h6'>
                         Version Control Tools
                     </Typography>
+                    <List dense={true}>
+                        {tools.map((tool) => (
+                            <ListItem>
+                                {/* <ListItemAvatar>
+                                    <Avatar>
+                                        <Icon />
+                                    </Avatar>
+                                </ListItemAvatar> */}
+                                <ListItemText primary={tool} primaryTypographyProps={{ color: 'primary' }} />
+                            </ListItem>
+                        ))}
+                    </List>
                 </Grid>
                 
             </Grid>
