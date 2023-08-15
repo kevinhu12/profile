@@ -4,7 +4,7 @@ import Container from '@mui/material/Container';
 import { useTheme } from '@mui/material/styles';
 
 import { Navbar } from './Navbar';
-import AboutMe from '../sections/AboutMe';
+import AboutMe from '../sections/about-me/AboutMe';
 import Home from '../sections/Home';
 import TechnicalSkills from '../sections/technical-skillset/TechnicalSkills';
 import Transition from '../sections/Transition';
