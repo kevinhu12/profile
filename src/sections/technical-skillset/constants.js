@@ -1,44 +1,91 @@
+import blazorLogo from '../../images/blazor-logo.png';
 import cSharpLogo from '../../images/c-sharp-logo.png';
+import dotnetCoreLogo from '../../images/dotnet-core-logo.png';
+import entityFrameworkLogo from '../../images/entity-framework-logo.png';
+import jsTsLogo from '../../images/js-ts-logo.png';
+import materialUiLogo from '../../images/material-ui-logo.png';
+import nodeLogo from '../../images/node-logo.png';
+import reactLogo from '../../images/react-logo.png';
+import reduxLogo from '../../images/redux-logo.png';
+import seleniumLogo from '../../images/selenium-logo.png';
+import telerikLogo from '../../images/telerik-logo.png';
 
 export const languages = [
     {
         name: 'C#',
-        icon: cSharpLogo,
         description: 'My language of choice! Working with this language during my time at SPS Commerce and SEH Computer Systems has shown me the power of C#, coupled with its refined syntax.',
+        icon: {
+            name: 'C#',
+            src: cSharpLogo,
+            height: 45,
+            width: 40
+        },
         frameworks: [
             {
-                name: 'ASP.NET Core'
+                name: 'ASP.NET Core',
+                src: dotnetCoreLogo,
+                height: 45,
+                width: 40
             },
             {
-                name: 'Entity Framework'
+                name: 'Entity Framework',
+                src: entityFrameworkLogo,
+                height: 45,
+                width: 40
             },
             {
-                name: 'Blazor'
+                name: 'Blazor',
+                src: blazorLogo,
+                height: 45,
+                width: 40
             },
             {
-                name: 'Telerik'
+                name: 'Telerik',
+                src: telerikLogo,
+                height: 45,
+                width: 40
             },
         ]
     },
     {
         name: 'JavaScript & TypeScript',
-        icon: cSharpLogo,
         description: 'Two languages that I find myself using whenever I am building a small project or application. After programming with a combination of both at Spotwork, I find its ease of use appealing.',
+        icon: {
+            name: 'JavaScript & TypeScript',
+            src: jsTsLogo,
+            height: 45,
+            width: 40
+        },
         frameworks: [
             {
-                name: 'React.js'
+                name: 'React.js',
+                src: reactLogo,
+                height: 45,
+                width: 40
             },
             {
-                name: 'Node.js'
+                name: 'Node.js',
+                src: nodeLogo,
+                height: 45,
+                width: 40
             },
             {
-                name: 'Redux'
+                name: 'Redux',
+                src: reduxLogo,
+                height: 45,
+                width: 40
             },
             {
-                name: 'Material UI'
+                name: 'Material UI',
+                src: materialUiLogo,
+                height: 45,
+                width: 40
             },
             {
-                name: 'Selenium'
+                name: 'Selenium',
+                src: seleniumLogo,
+                height: 45,
+                width: 40
             }
         ]
     }

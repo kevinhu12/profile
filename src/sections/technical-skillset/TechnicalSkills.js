@@ -46,11 +46,6 @@ const TechnicalSkills = ({
                         {/* TODO: Make a shared component for the icons + list stuff */}
                         {additionalLanguages.map((language) => (
                             <ListItem>
-                                {/* <ListItemAvatar>
-                                    <Avatar>
-                                        <Icon />
-                                    </Avatar>
-                                </ListItemAvatar> */}
                                 <ListItemText primary={language} primaryTypographyProps={{ color: 'primary' }} />
                             </ListItem>
                         ))}
@@ -58,7 +53,7 @@ const TechnicalSkills = ({
                 </Grid>
                 {languages.map((language, idx) => (
                     <Grid xs={4}>
-                        <LanguageSection language={language} />
+                        <LanguageSection language={language} theme={theme} />
                     </Grid>
                 ))}
 
