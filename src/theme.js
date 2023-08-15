@@ -4,13 +4,15 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
     palette: {
         background: {
-            primary: '#051014',
-            secondary: '#333333',
-            navbar: '#E33E7F',
-            transition: '#FFF3E4'
+            primary: '#051014', // white
+            secondary: '#333333', // dark gray
+            // navbar: '#E33E7F',
+            transition: '#FFF3E4', // beige
+            tertiary: '#ACBDBA', // ash gray
         },
-        primary: { main: '#FFFFFF' }, // White
-        secondary: { main: '#cddddd' } // Blue-ish gray
+        primary: { main: '#FFFFFF' }, // white
+        secondary: { main: '#cddddd' }, // blue-ish gray
+        tertiary: { main: '#000000' }, // black
     },
     spacingValues: {
         box: 1

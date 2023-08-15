@@ -18,38 +18,23 @@ const Transition = ({
     const theme = useTheme();
     
     return (
-        <Box sx={{ p: theme.spacingValues.box, background: theme.palette.background.transition }}>
+        <Box sx={{ p: theme.spacingValues.box, background: theme.palette.background.tertiary }}>
             <Grid container spacing={2}>
                 <Grid xs={12}>
-                    <Typography color='secondary' variant='subtitle2'>
-                        TECHNICAL SKILLSET
+                    <Typography color='tertiary' variant='h5'>
+                        Cloud
                     </Typography>
-                </Grid>
-                <Grid xs={4}>
-                    <Typography color='primary' variant='h5'>
-                        Languages and Frameworks
-                    </Typography>
-                    <Typography color='primary' variant='body1'>
-                        My most familiar languages, and the frameworks that accompany them.
+                    <Typography color='tertiary' variant='body1'>
+                        Here are some of the cloud technologies I have worked with.
                     </Typography>
                 </Grid>
 
                 <Grid xs={12}>
-                    <Typography color='primary' variant='h5'>
-                        Tools and Database Management
+                    <Typography color='tertiary' variant='body2'>
+                        AWS
                     </Typography>
-                    <Typography color='primary' variant='body1'>
-                        Some databases and general coding tools I have used
-                    </Typography>
-                </Grid>
-                <Grid xs={6}>
-                    <Typography color='secondary' variant='h6'>
-                        Database
-                    </Typography>
-                </Grid>
-                <Grid xs={6}>
-                    <Typography color='secondary' variant='h6'>
-                        Version Control Tools
+                    <Typography color='tertiary' variant='body2'>
+                        Firebase
                     </Typography>
                 </Grid>
                 
