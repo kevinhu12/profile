@@ -13,7 +13,8 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 
 import athleticsImg from '../../images/athletics-soccer.JPG';
 
-// Constants
+import { itemData } from './constants';
+import { Parallax } from 'react-scroll-parallax';
 
 // Main component
 const AboutMe = ({
@@ -32,6 +33,35 @@ const AboutMe = ({
 
                 {/* IDEA: AboutMe is just a paradox scroll section where the background is a collage
                           with different labelled sections (e.g. Athletics, Gaming, etc) */}
+                {/* <Parallax translateX={[-70,100]}>
+                
+                <ImageList variant='masonry' cols={5} gap={8}>
+                    {itemData.map((img, idx) => (
+                        <ImageListItem key={idx}>
+                            <img
+                                src={`${img.img}?w=248&fit=crop&auto=format`}
+                                srcSet={`${img.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                alt={img.title}
+                                loading='lazy'
+                            />
+                        </ImageListItem>
+                    ))}
+                </ImageList>
+
+                </Parallax> */}
+
+                <ImageList variant='masonry' cols={5} gap={8}>
+                    {itemData.map((img, idx) => (
+                        <ImageListItem key={idx}>
+                            <img
+                                src={`${img.img}?w=248&fit=crop&auto=format`}
+                                srcSet={`${img.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                alt={img.title}
+                                loading='lazy'
+                            />
+                        </ImageListItem>
+                    ))}
+                </ImageList>
 
                 {/* IMPLEMENTATION: using ImageList */}
                 {/* <Grid xs={12}>
