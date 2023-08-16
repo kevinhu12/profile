@@ -99,17 +99,23 @@ export const additionalLanguages = [
     'Web Languages (HTML, CSS) with Bootstrap'
 ];
 
-export const databases = [
-    'Relational Databases: MySQL, Microsoft SQL Server, PostgreSQL',
-    'NoSQL Databases: Firebase, MongoDB, CosmosDB'
-];
+export const databases = {
+    name: 'Databases',
+    examples: [
+        'Relational Databases: MySQL, Microsoft SQL Server, PostgreSQL',
+        'NoSQL Databases: Firebase, MongoDB, CosmosDB'
+    ]
+};
 
-export const tools = [
-    'Tickets and Pipelines: Jira, Azure and Azure DevOps',
-    'Scripting: Linux, Bash, PowerShell',
-    'Version Control: Git, Github',
-    'API Testing: Postman'
-];
+export const tools = {
+    name: 'Version Control Tools',
+    examples: [
+        'Tickets and Pipelines: Jira, Azure and Azure DevOps',
+        'Scripting: Linux, Bash, PowerShell',
+        'Version Control: Git, Github',
+        'API Testing: Postman'
+    ]
+};
 
 export const descriptions = {
     languages: 'Throughout my university courses and previous work experiences, I have been introduced to—and familiarized myself with—a wide variety of programming languages. Here are some of my favourite ones, as well as the frameworks and libraries that I have used alongside them.',

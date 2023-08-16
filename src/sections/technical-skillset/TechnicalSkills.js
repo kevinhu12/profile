@@ -10,6 +10,7 @@ import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 
 import LanguageSection from './LanguageSection';
+import ToolCard from './ToolCard';
 import { 
     additionalLanguages,
     databases,
@@ -27,11 +28,15 @@ const TechnicalSkills = ({
     return (
         <Box sx={{ p: theme.spacingValues.box, background: theme.palette.background.primary }}>
             <Grid container spacing={2}>
+
+                {/* Section header */}
                 <Grid xs={12}>
                     <Typography color='secondary' variant='subtitle2'>
                         TECHNICAL SKILLSET
                     </Typography>
                 </Grid>
+
+                {/* Languages and frameworks section */}
                 <Grid xs={4}>
                     <Typography color='primary' variant='h5'>
                         Languages and Frameworks
@@ -42,21 +47,18 @@ const TechnicalSkills = ({
                     <Typography color='primary' variant='body1' sx={{ mt: 3 }}>
                         {descriptions.additionalLanguages}
                     </Typography>
-                    <List dense={true}>
-                        {/* TODO: Make a shared component for the icons + list stuff */}
-                        {additionalLanguages.map((language) => (
-                            <ListItem>
-                                <ListItemText primary={language} primaryTypographyProps={{ color: 'primary' }} />
-                            </ListItem>
-                        ))}
-                    </List>
+                    <Typography color='primary' variant='body2' sx={{ mt: 1 }}>
+                        {additionalLanguages.join(', ')}
+                    </Typography>
                 </Grid>
-                {languages.map((language, idx) => (
+                {languages.map((language) => (
                     <Grid xs={4}>
                         <LanguageSection language={language} theme={theme} />
                     </Grid>
                 ))}
 
+                {/* TODO: separate this into its own component */}
+                {/* Tools and database section */}
                 <Grid xs={12}>
                     <Typography color='primary' variant='h5'>
                         Tools and Database Management
@@ -66,38 +68,10 @@ const TechnicalSkills = ({
                     </Typography>
                 </Grid>
                 <Grid xs={6}>
-                    <Typography color='secondary' variant='h6'>
-                        Database
-                    </Typography>
-                    <List dense={true}>
-                        {databases.map((database) => (
-                            <ListItem>
-                                {/* <ListItemAvatar>
-                                    <Avatar>
-                                        <Icon />
-                                    </Avatar>
-                                </ListItemAvatar> */}
-                                <ListItemText primary={database} primaryTypographyProps={{ color: 'primary' }} />
-                            </ListItem>
-                        ))}
-                    </List>
+                    <ToolCard tool={databases} theme={theme} />
                 </Grid>
                 <Grid xs={6}>
-                    <Typography color='secondary' variant='h6'>
-                        Version Control Tools
-                    </Typography>
-                    <List dense={true}>
-                        {tools.map((tool) => (
-                            <ListItem>
-                                {/* <ListItemAvatar>
-                                    <Avatar>
-                                        <Icon />
-                                    </Avatar>
-                                </ListItemAvatar> */}
-                                <ListItemText primary={tool} primaryTypographyProps={{ color: 'primary' }} />
-                            </ListItem>
-                        ))}
-                    </List>
+                    <ToolCard tool={tools} theme={theme} />
                 </Grid>
                 
             </Grid>
