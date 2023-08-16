@@ -3,14 +3,17 @@ import React from 'react';
 import theme from './theme';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
     return (
         <>
-            <CssBaseline />
-            <ThemeProvider theme={theme}>
-                <BasePage />
-            </ThemeProvider>
+            <ParallaxProvider>
+                <CssBaseline />
+                <ThemeProvider theme={theme}>
+                    <BasePage />
+                </ThemeProvider>
+            </ParallaxProvider>
         </>
     );
 }

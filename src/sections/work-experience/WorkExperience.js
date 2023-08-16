@@ -1,5 +1,6 @@
 // Imports
 import React from 'react';
+import { Parallax } from 'react-scroll-parallax';
 
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
@@ -23,18 +24,22 @@ const WorkExperience = ({
                         WORK EXPERIENCE
                     </Typography>
                 </Grid>
-                <Grid xs={12}>
-                    <Typography color='primary' variant='h5'>
-                        Some companies that I have previously worked for.
-                    </Typography>
-                </Grid>
-                {jobs.map((job, idx) => (
-                    <Job
-                        idx={idx+1}
-                        job={job}
-                        theme={theme}
-                    />
-                ))}
+                {/* <Parallax translateX={[-24,100]}> */}
+                    <Grid xs={12}>
+                        <Typography color='primary' variant='h5'>
+                            Some companies that I have previously worked for.
+                        </Typography>
+                    </Grid>
+                {/* </Parallax> */}
+                {/* <Grid xs={12} display='flex' flexDirection='row' sx={{ mt: 2 }}> */}
+                    {jobs.map((job, idx) => (
+                        <Job
+                            idx={idx+1}
+                            job={job}
+                            theme={theme}
+                        />
+                    ))}
+                {/* </Grid> */}
             </Grid>
         </Box>
     );

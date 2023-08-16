@@ -7,10 +7,6 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 
-import AddCircleIcon from '@mui/icons-material/AddCircle'
-
-// Constants
-
 // Main component
 const Transition = ({
 
