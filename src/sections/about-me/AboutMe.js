@@ -24,66 +24,38 @@ const AboutMe = ({
     
     return (
         <Box sx={{ p: theme.spacingValues.box, background: theme.palette.background.primary }}>
-            <Grid container spacing={2}>
-                <Grid xs={12}>
-                    <Typography color='secondary' variant='subtitle2'>
-                        ABOUT ME
-                    </Typography>
-                </Grid>
+            <Typography color='secondary' variant='subtitle2' sx={{ 
+                backgroundColor: theme.palette.background.primary,
+                position: '-webkit-sticky',
+                    position: 'sticky',
+                    top: 0,
+                    zIndex: 10
+            }}>
+                ABOUT ME
+            </Typography>
 
-                {/* IDEA: AboutMe is just a paradox scroll section where the background is a collage
-                          with different labelled sections (e.g. Athletics, Gaming, etc) */}
-                {/* <Parallax translateX={[-70,100]}>
-                
-                <ImageList variant='masonry' cols={5} gap={8}>
-                    {itemData.map((img, idx) => (
-                        <ImageListItem key={idx}>
-                            <img
-                                src={`${img.img}?w=248&fit=crop&auto=format`}
-                                srcSet={`${img.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                alt={img.title}
-                                loading='lazy'
-                            />
-                        </ImageListItem>
-                    ))}
-                </ImageList>
-
-                </Parallax> */}
-
-                <ImageList variant='masonry' cols={5} gap={8}>
-                    {itemData.map((img, idx) => (
-                        <ImageListItem key={idx}>
-                            <img
-                                src={`${img.img}?w=248&fit=crop&auto=format`}
-                                srcSet={`${img.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                alt={img.title}
-                                loading='lazy'
-                            />
-                        </ImageListItem>
-                    ))}
-                </ImageList>
-
-                {/* IMPLEMENTATION: using ImageList */}
-                {/* <Grid xs={12}>
-                    <ImageList>
-                        <ImageListItem key={0}>
-                            <img
-                                src={`${athleticsImg}?w=248&fit=crop&auto=format`}
-                                srcSet={`${athleticsImg}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                alt={'soccer'}
-                                loading='lazy'
-                            />
-                            <ImageListItemBar
-                                title='Athletics'
-                                subtitle='Cool stuff'
-                                position='below'
-                            />
-                        </ImageListItem>
-                    </ImageList>
-                </Grid> */}
-
-                {/* IMPLEMENTATION: using carousel */}
-            </Grid>
+            <Typography color='tertiary' variant='body1'
+                sx={{
+                    position: 'absolute',
+                    translate: { y: -10 },
+                    zIndex: 9,
+                    mt: 18
+                }}
+            >
+                Test text
+            </Typography>
+            <ImageList variant='masonry' cols={5} gap={8}>
+                {itemData.map((img, idx) => (
+                    <ImageListItem key={idx}>
+                        <img
+                            src={`${img.img}?w=248&fit=crop&auto=format`}
+                            srcSet={`${img.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                            alt={img.title}
+                            loading='lazy'
+                        />
+                    </ImageListItem>
+                ))}
+            </ImageList>
         </Box>
     );
 }
