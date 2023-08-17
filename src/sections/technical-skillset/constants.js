@@ -23,24 +23,28 @@ export const languages = [
         frameworks: [
             {
                 name: 'ASP.NET Core',
+                description: 'desc for asp.net core',
                 src: dotnetCoreLogo,
                 height: 45,
                 width: 40
             },
             {
                 name: 'Entity Framework',
+                description: 'desc for entity framework',
                 src: entityFrameworkLogo,
                 height: 45,
                 width: 40
             },
             {
                 name: 'Blazor',
+                description: 'desc for blazor',
                 src: blazorLogo,
                 height: 45,
                 width: 40
             },
             {
                 name: 'Telerik',
+                description: 'desc for telerik',
                 src: telerikLogo,
                 height: 45,
                 width: 40
@@ -59,30 +63,35 @@ export const languages = [
         frameworks: [
             {
                 name: 'React.js',
+                description: 'desc for react',
                 src: reactLogo,
                 height: 45,
                 width: 40
             },
             {
                 name: 'Node.js',
+                description: 'desc for node',
                 src: nodeLogo,
                 height: 45,
                 width: 40
             },
             {
                 name: 'Redux',
+                description: 'desc for redux',
                 src: reduxLogo,
                 height: 45,
                 width: 40
             },
             {
                 name: 'Material UI',
+                description: 'desc for mui',
                 src: materialUiLogo,
                 height: 45,
                 width: 40
             },
             {
                 name: 'Selenium',
+                description: 'desc for selenium',
                 src: seleniumLogo,
                 height: 45,
                 width: 40

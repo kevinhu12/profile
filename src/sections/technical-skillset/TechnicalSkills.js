@@ -9,7 +9,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 
-import LanguageSection from './LanguageSection';
+import LanguageCard from './LanguageCard';
 import ToolCard from './ToolCard';
 import { 
     additionalLanguages,
@@ -27,7 +27,7 @@ const TechnicalSkills = ({
     
     return (
         <Box sx={{ p: theme.spacingValues.box, background: theme.palette.background.primary }}>
-            <Grid container spacing={2}>
+            <Grid container spacing={2} sx={{ overflow: 'hidden' }} justifyContent='center'>
 
                 {/* Section header */}
                 <Grid xs={12}>
@@ -36,24 +36,20 @@ const TechnicalSkills = ({
                     </Typography>
                 </Grid>
 
-                {/* Languages and frameworks section */}
-                <Grid xs={4}>
+                {/* Description */}
+                <Grid xs={12}>
                     <Typography color='primary' variant='h5'>
                         Languages and Frameworks
                     </Typography>
                     <Typography color='primary' variant='body1' sx={{ mt: 1 }}>
                         {descriptions.languages}
                     </Typography>
-                    <Typography color='primary' variant='body1' sx={{ mt: 3 }}>
-                        {descriptions.additionalLanguages}
-                    </Typography>
-                    <Typography color='primary' variant='body2' sx={{ mt: 1 }}>
-                        {additionalLanguages.join(', ')}
-                    </Typography>
                 </Grid>
+
+                {/* Languages and Frameworks */}
                 {languages.map((language) => (
-                    <Grid xs={4}>
-                        <LanguageSection language={language} theme={theme} />
+                    <Grid xs={6} display='flex' justifyContent='center'>
+                        <LanguageCard language={language} theme={theme} />
                     </Grid>
                 ))}
 
