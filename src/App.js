@@ -5,12 +5,12 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
-function App() {
+function App() {    
     return (
         <>
             <ParallaxProvider>
                 <CssBaseline />
-                <ThemeProvider theme={theme}>
+                <ThemeProvider theme={theme}>    
                     <BasePage />
                 </ThemeProvider>
             </ParallaxProvider>
