@@ -1,4 +1,3 @@
-// Imports
 import React, { useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -15,10 +14,8 @@ import { useTheme } from '@mui/material/styles';
 // Constants
 const pages = ['About Me', 'Projects', 'Hobbies'];
 
-// Styled components
-
-// Main component
-export const Navbar = ({
+// Component: navbar
+const Navbar = ({
 
 }) => {
     const theme = useTheme();
@@ -101,3 +98,5 @@ export const Navbar = ({
         </AppBar>
     );
 }
+
+export default Navbar;

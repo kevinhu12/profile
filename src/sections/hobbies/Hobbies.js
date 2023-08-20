@@ -15,7 +15,7 @@ const cardVariants = {
         y: 300
     },
     onscreen: {
-        y: 50,
+        y: 0,
         transition: {
             type: 'spring',
             bounce: 0.4,
@@ -32,13 +32,17 @@ const Hobbies = ({
     
     return (
         <Box sx={{ p: theme.spacingValues.box, background: theme.palette.background.primary }}>
-            <Typography color='secondary' variant='subtitle2' sx={{ 
-                backgroundColor: theme.palette.background.primary,
-                position: '-webkit-sticky',
-                    position: 'sticky',
-                    top: 0,
-                    zIndex: 10
-            }}>
+            <Typography 
+                color='secondary' 
+                variant='subtitle2' 
+                // sx={{ 
+                //     backgroundColor: theme.palette.background.primary,
+                //     position: '-webkit-sticky',
+                //         position: 'sticky',
+                //         top: 0,
+                //         zIndex: 10
+                // }}
+            >
                 HOBBIES
             </Typography>
             <Grid container>
