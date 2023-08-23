@@ -111,8 +111,15 @@ export const additionalLanguages = [
 export const databases = {
     name: 'Databases',
     examples: [
-        'Relational Databases: MySQL, Microsoft SQL Server, PostgreSQL',
-        'NoSQL Databases: Firebase, MongoDB, CosmosDB'
+        {
+            title: 'Relational Databases',
+            fields: [
+                'MySQL',
+                'PostgreSQL',
+                'Microsoft SQL Server'
+            ]
+        }
+        // 'NoSQL Databases: Firebase, MongoDB, CosmosDB'
     ]
 };
 

@@ -48,12 +48,12 @@ const Hobbies = ({
             <Grid container>
                 {hobbies.map((hobby) => (
                     <Grid xs={4} display='flex' justifyContent='center'>
-                        <motion.div variants={cardVariants} initial='offscreen' whileInView='onscreen'>
-                        <HobbyCard
-                            data={hobby}
-                            type={hobby.img === undefined ? 'Video' : 'Image'}
-                            theme={theme}
-                        />
+                        <motion.div variants={cardVariants} initial='offscreen' whileInView='onscreen' viewport={{ once: true }}>
+                            <HobbyCard
+                                data={hobby}
+                                type={hobby.img === undefined ? 'Video' : 'Image'}
+                                theme={theme}
+                            />
                         </motion.div>
                     </Grid>
                 ))}

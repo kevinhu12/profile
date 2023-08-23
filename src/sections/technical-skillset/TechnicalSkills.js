@@ -55,7 +55,7 @@ const TechnicalSkills = ({
 
                 {/* TODO: separate this into its own component */}
                 {/* Tools and database section */}
-                <Grid xs={12}>
+                {/* <Grid xs={12}>
                     <Typography color='primary' variant='h5'>
                         Tools and Database Management
                     </Typography>
@@ -68,7 +68,10 @@ const TechnicalSkills = ({
                 </Grid>
                 <Grid xs={6}>
                     <ToolCard tool={tools} theme={theme} />
-                </Grid>
+                </Grid> */}
+                {/* <Grid xs={12}>
+                    <ToolCard tool={databases} theme={theme} />
+                </Grid> */}
                 
             </Grid>
         </Box>

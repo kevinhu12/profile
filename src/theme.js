@@ -9,6 +9,7 @@ const theme = createTheme({
             // navbar: '#E33E7F',
             transition: '#FFF3E4', // beige
             tertiary: '#ACBDBA', // ash gray
+            quatanary: '#FFFFFF', // white
         },
         primary: { main: '#FFFFFF' }, // white
         secondary: { main: '#cddddd' }, // blue-ish gray

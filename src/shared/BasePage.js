@@ -8,6 +8,7 @@ import ProgressBar from './ProgressBar';
 import TechnicalSkills from '../sections/technical-skillset/TechnicalSkills';
 import Transition from '../sections/Transition';
 import WorkExperience from '../sections/work-experience/WorkExperience';
+import WorkingWithData from '../sections/working-with-data/WorkingWithData';
 
 // Component: main page containing all the sections
 const BasePage = ({
@@ -24,6 +25,7 @@ const BasePage = ({
             <WorkExperience />
             <Transition />
             <TechnicalSkills />
+            <WorkingWithData />
             <Hobbies />
         </Container>
     );
