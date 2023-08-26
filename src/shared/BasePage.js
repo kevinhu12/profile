@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from '@mui/material/Container';
 import { useTheme } from '@mui/material/styles';
+import ContactInfo from '../sections/contact/ContactInfo';
 import Hobbies from '../sections/hobbies/Hobbies';
 import Home from '../sections/Home';
 import Navbar from './Navbar';
@@ -27,6 +28,7 @@ const BasePage = ({
             <TechnicalSkills />
             <WorkingWithData />
             <Hobbies />
+            <ContactInfo />
         </Container>
     );
 }
