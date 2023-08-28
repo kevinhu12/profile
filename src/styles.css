@@ -22,3 +22,12 @@ code {
   transform-origin: 0%;
   z-index: 150;
 }
+
+.parallelogram {
+  margin-left: 0.8em;
+  width: 20em;
+  height: 1.5em;
+  border-top: 0.45em solid #DBD8F0;
+  border-bottom: 0.45em solid #DBD8F0;
+  transform: skew(-10deg);
+}

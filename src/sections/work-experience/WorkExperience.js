@@ -16,12 +16,33 @@ const WorkExperience = ({
     
     return (
         <Section>
-            <Grid container spacing={2}>
-                <Grid xs={12}>
-                    <Typography color='secondary' variant='subtitle2'>
-                        WORK EXPERIENCE
+            <Grid container spacing={2} sx={{ overflow: 'hidden' }}>
+
+                <Grid xs={12} display='flex' justifyContent='center'>
+                    <div className='parallelogram' />
+                </Grid>
+
+                {/* <Grid xs={12} display='flex' justifyContent='center'>
+                    <Parallax
+                        scale={[0.75, 1.25, 'easeInQuad']}
+                    >
+                        <Typography color='primary' variant='h4'>
+                            Work Experience
+                        </Typography>
+                    </Parallax>
+                </Grid> */}
+
+                <Grid xs={12} display='flex' justifyContent='center'>
+                    <Typography color='primary' variant='h4'>
+                        Work Experience
                     </Typography>
                 </Grid>
+                
+
+                <Grid xs={12} display='flex' justifyContent='center'>
+                    <div className='parallelogram' />
+                </Grid>
+
                 {/* <Parallax translateX={[-24,100]}> */}
                     <Grid xs={12}>
                         <Typography color='primary' variant='h5'>
