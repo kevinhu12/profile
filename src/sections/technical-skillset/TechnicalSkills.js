@@ -10,6 +10,7 @@ import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 
 import LanguageCard from './LanguageCard';
+import Section from '../../shared/Section';
 import ToolCard from './ToolCard';
 import { 
     additionalLanguages,
@@ -26,7 +27,7 @@ const TechnicalSkills = ({
     const theme = useTheme();
     
     return (
-        <Box sx={{ p: theme.spacingValues.box, background: theme.palette.background.primary }}>
+        <Section>
             <Grid container spacing={2} sx={{ overflow: 'hidden' }} justifyContent='center'>
 
                 {/* Section header */}
@@ -74,7 +75,7 @@ const TechnicalSkills = ({
                 </Grid> */}
                 
             </Grid>
-        </Box>
+        </Section>
     );
 }
 

@@ -1,23 +1,21 @@
-// Imports
 import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
-
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
-
 import Job from './Job';
+import Section from '../../shared/Section';
 import { jobs } from './constants';
 
-// Main component
+// Component (section): displays the Work Experience section
 const WorkExperience = ({
 
 }) => {
     const theme = useTheme();
     
     return (
-        <Box sx={{ p: theme.spacingValues.box, background: theme.palette.background.primary }}>
+        <Section>
             <Grid container spacing={2}>
                 <Grid xs={12}>
                     <Typography color='secondary' variant='subtitle2'>
@@ -41,7 +39,7 @@ const WorkExperience = ({
                     ))}
                 {/* </Grid> */}
             </Grid>
-        </Box>
+        </Section>
     );
 }
 

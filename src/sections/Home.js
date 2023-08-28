@@ -6,6 +6,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 
+import Section from '../shared/Section';
 import testimg from '../images/react-logo.png';
 
 // Styled components
@@ -17,7 +18,7 @@ const Home = ({
     const theme = useTheme();
     
     return (
-        <Box sx={{ p: theme.spacingValues.box }}>
+        <Section disableTopPadding>
             <Grid container spacing={2}>
                 <Grid xs={5} sx={{ background: theme.palette.background.primary }}>
                     <Typography color='primary'>
@@ -37,7 +38,7 @@ const Home = ({
                     </Typography>
                 </Grid>
             </Grid>
-        </Box>
+        </Section>
     );
 }
 

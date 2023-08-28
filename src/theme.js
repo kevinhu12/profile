@@ -15,8 +15,10 @@ const theme = createTheme({
         secondary: { main: '#cddddd' }, // blue-ish gray
         tertiary: { main: '#000000' }, // black
     },
-    spacingValues: {
-        box: 1
+    sectionSpacing: {
+        horizontal: 1,
+        vertical: 250,
+        default: 0
     }
 });
 

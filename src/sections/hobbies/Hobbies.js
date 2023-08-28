@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 
 import HobbyCard from './HobbyCard';
+import Section from '../../shared/Section';
 import { hobbies } from './constants';
 import { motion } from 'framer-motion';
 
@@ -31,7 +32,7 @@ const Hobbies = ({
     const theme = useTheme();
     
     return (
-        <Box sx={{ p: theme.spacingValues.box, background: theme.palette.background.primary }}>
+        <Section>
             <Typography 
                 color='secondary' 
                 variant='subtitle2' 
@@ -58,7 +59,7 @@ const Hobbies = ({
                     </Grid>
                 ))}
             </Grid>
-        </Box>
+        </Section>
     );
 }
 

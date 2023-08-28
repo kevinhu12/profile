@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 
 import JsonDbView from './JsonDbView';
+import Section from '../../shared/Section';
 import TableDbView from './TableDbView';
 import {
     noSqlDatabases,
@@ -25,7 +26,7 @@ const WorkingWithData = ({
     };
     
     return (
-        <Box sx={{ p: theme.spacingValues.box, background: theme.palette.background.primary }}>
+        <Section>
             <Grid container spacing={2} sx={{ overflow: 'hidden' }} justifyContent='center'>
 
                 {/* Section header */}
@@ -66,7 +67,7 @@ const WorkingWithData = ({
                     
                 </Grid>
             </Grid>
-        </Box>
+        </Section>
     );
 }
 

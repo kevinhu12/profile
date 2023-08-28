@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 
 import avatarPic from '../../images/react-logo.png';
+import Section from '../../shared/Section';
 import {
 } from './constants';
 
@@ -15,7 +16,7 @@ const ContactInfo = ({
     const theme = useTheme();
     
     return (
-        <Box sx={{ p: theme.spacingValues.box, background: theme.palette.background.primary }}>
+        <Section disableBottomPadding>
             <Grid container spacing={2} sx={{ overflow: 'hidden' }} justifyContent='center'>
 
                 {/* Section header */}
@@ -51,7 +52,7 @@ const ContactInfo = ({
                     </Typography>
                 </Grid>
             </Grid>
-        </Box>
+        </Section>
     );
 }
 

@@ -7,6 +7,8 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 
+import Section from '../shared/Section';
+
 // Main component
 const Transition = ({
 
@@ -14,7 +16,7 @@ const Transition = ({
     const theme = useTheme();
     
     return (
-        <Box sx={{ p: theme.spacingValues.box, background: theme.palette.background.tertiary }}>
+        <Section>
             <Grid container spacing={2}>
                 <Grid xs={12}>
                     <Typography color='tertiary' variant='h5'>
@@ -35,7 +37,7 @@ const Transition = ({
                 </Grid>
                 
             </Grid>
-        </Box>
+        </Section>
     );
 }
 
