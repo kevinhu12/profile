@@ -108,21 +108,6 @@ export const additionalLanguages = [
     'Web Languages (HTML, CSS) with Bootstrap'
 ];
 
-export const databases = {
-    name: 'Databases',
-    examples: [
-        {
-            title: 'Relational Databases',
-            fields: [
-                'MySQL',
-                'PostgreSQL',
-                'Microsoft SQL Server'
-            ]
-        }
-        // 'NoSQL Databases: Firebase, MongoDB, CosmosDB'
-    ]
-};
-
 export const tools = {
     name: 'Version Control Tools',
     examples: [

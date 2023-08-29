@@ -1,26 +1,18 @@
-// Imports
 import React from 'react';
-
-import Box from '@mui/material/Box';
+import { motion } from 'framer-motion';
 import Grid from '@mui/material/Unstable_Grid2';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
-
 import LanguageCard from './LanguageCard';
 import Section from '../../shared/Section';
-import ToolCard from './ToolCard';
 import { 
     additionalLanguages,
-    databases,
     descriptions,
     languages,
     tools
 } from './constants';
 
-// Main component
+// Component: displays the languages and frameworks section
 const TechnicalSkills = ({
 
 }) => {
@@ -28,13 +20,19 @@ const TechnicalSkills = ({
     
     return (
         <Section>
-            <Grid container spacing={2} sx={{ overflow: 'hidden' }} justifyContent='center'>
+            <Grid container spacing={2} sx={{ overflow: 'hidden' }}>
 
                 {/* Section header */}
-                <Grid xs={12}>
-                    <Typography color='secondary' variant='subtitle2'>
-                        TECHNICAL SKILLSET
+                <Grid xs={12} display='flex' justifyContent='center'>
+                    <div className='parallelogram' />
+                </Grid>
+                <Grid xs={12} display='flex' justifyContent='center'>
+                    <Typography color='primary' variant='h4'>
+                        Technical Skills
                     </Typography>
+                </Grid>
+                <Grid xs={12} display='flex' justifyContent='center'>
+                    <div className='parallelogram' />
                 </Grid>
 
                 {/* Description */}
@@ -50,30 +48,14 @@ const TechnicalSkills = ({
                 {/* Languages and Frameworks */}
                 {languages.map((language) => (
                     <Grid xs={6} display='flex' justifyContent='center'>
-                        <LanguageCard language={language} theme={theme} />
+                        <motion.div 
+                            initial={{ x: 300 }} 
+                            whileInView={{ x: 0, transition: { type: 'sprint', bounce: 0.4, duration: 1 } }}
+                        >
+                            <LanguageCard language={language} theme={theme} />
+                        </motion.div>
                     </Grid>
                 ))}
-
-                {/* TODO: separate this into its own component */}
-                {/* Tools and database section */}
-                {/* <Grid xs={12}>
-                    <Typography color='primary' variant='h5'>
-                        Tools and Database Management
-                    </Typography>
-                    <Typography color='primary' variant='body1' sx={{ mt: 1 }}>
-                        {descriptions.tools}
-                    </Typography>
-                </Grid>
-                <Grid xs={6}>
-                    <ToolCard tool={databases} theme={theme} />
-                </Grid>
-                <Grid xs={6}>
-                    <ToolCard tool={tools} theme={theme} />
-                </Grid> */}
-                {/* <Grid xs={12}>
-                    <ToolCard tool={databases} theme={theme} />
-                </Grid> */}
-                
             </Grid>
         </Section>
     );
