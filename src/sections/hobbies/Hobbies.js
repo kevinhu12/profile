@@ -20,7 +20,7 @@ const cardVariants = {
         transition: {
             type: 'spring',
             bounce: 0.4,
-            duration: 0.8
+            duration: 1
         }
     }
 };
@@ -33,26 +33,31 @@ const Hobbies = ({
     
     return (
         <Section>
-            <Typography 
-                color='secondary' 
-                variant='subtitle2' 
-                // sx={{ 
-                //     backgroundColor: theme.palette.background.primary,
-                //     position: '-webkit-sticky',
-                //         position: 'sticky',
-                //         top: 0,
-                //         zIndex: 10
-                // }}
-            >
-                HOBBIES
-            </Typography>
-            <Grid container>
+            <Grid container spacing={2}>
+                <Grid xs={12} display='flex' justifyContent='center'>
+                    <div className='parallelogram' />
+                </Grid>
+
+                <Grid xs={12} display='flex' justifyContent='center'>
+                    <Typography color='primary' variant='h4'>
+                        Hobbies
+                    </Typography>
+                </Grid>
+
+                <Grid xs={12} display='flex' justifyContent='center'>
+                    <div className='parallelogram' />
+                </Grid>
+
                 {hobbies.map((hobby) => (
-                    <Grid xs={4} display='flex' justifyContent='center'>
-                        <motion.div variants={cardVariants} initial='offscreen' whileInView='onscreen' viewport={{ once: true }}>
+                    <Grid xs={12} display='flex' justifyContent='center'>
+                        <motion.div
+                            variants={cardVariants}
+                            initial='offscreen'
+                            whileInView='onscreen'
+                            // viewport={{ once: true }}
+                        >
                             <HobbyCard
-                                data={hobby}
-                                type={hobby.img === undefined ? 'Video' : 'Image'}
+                                hobby={hobby}
                                 theme={theme}
                             />
                         </motion.div>

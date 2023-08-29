@@ -2,18 +2,21 @@ import athleticsImg from '../../images/athletics-soccer.JPG';
 
 export const hobbies = [
     {
+        name: 'Hackathons',
+        description: 'hey look here',
         videoId: 'l-iHDj3EwdI',
-        title: 'Hackathons',
-        description: 'hey look here'
+        srcType: 'video'
     },
     {
-        img: athleticsImg,
-        title: 'Athletics',
-        description: 'soccer is cool'
+        name: 'Athletics',
+        description: 'soccer is cool',
+        image: athleticsImg,
+        srcType: 'image'
     },
     {
-        img: athleticsImg,
-        title: 'Gaming',
-        description: 'ayo'
+        name: 'Gaming',
+        description: 'ayo',
+        image: athleticsImg,
+        srcType: 'image'
     }
 ];
