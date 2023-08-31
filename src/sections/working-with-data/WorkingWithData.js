@@ -30,10 +30,16 @@ const WorkingWithData = ({
             <Grid container spacing={2} sx={{ overflow: 'hidden' }} justifyContent='center'>
 
                 {/* Section header */}
-                <Grid xs={12}>
-                    <Typography color='secondary' variant='subtitle2'>
-                        WORKING WITH DATA
+                <Grid xs={12} display='flex' justifyContent='center'>
+                    <div className='parallelogram' />
+                </Grid>
+                <Grid xs={12} display='flex' justifyContent='center'>
+                    <Typography color='primary' variant='h4'>
+                        Working with Data
                     </Typography>
+                </Grid>
+                <Grid xs={12} display='flex' justifyContent='center'>
+                    <div className='parallelogram' />
                 </Grid>
 
                 {/* Description */}
