@@ -15,37 +15,26 @@ const WorkExperience = ({
     const theme = useTheme();
     
     return (
-        <Section>
+        <Section sx={{ backgroundColor: '#000000'}}>
             <Grid container spacing={2} sx={{ overflow: 'hidden' }}>
 
                 <Grid xs={12} display='flex' justifyContent='center'>
                     <div className='parallelogram' />
                 </Grid>
 
-                {/* <Grid xs={12} display='flex' justifyContent='center'>
-                    <Parallax
-                        scale={[0.75, 1.25, 'easeInQuad']}
-                    >
-                        <Typography color='primary' variant='h4'>
-                            Work Experience
-                        </Typography>
-                    </Parallax>
-                </Grid> */}
-
                 <Grid xs={12} display='flex' justifyContent='center'>
-                    <Typography color='primary' variant='h4'>
+                    <Typography color={theme.palette.text.primary} variant='h4'>
                         Work Experience
                     </Typography>
                 </Grid>
                 
-
                 <Grid xs={12} display='flex' justifyContent='center'>
                     <div className='parallelogram' />
                 </Grid>
 
                 {/* <Parallax translateX={[-24,100]}> */}
                     <Grid xs={12}>
-                        <Typography color='primary' variant='h5'>
+                        <Typography color={theme.palette.text.primary} variant='h5'>
                             Some companies that I have previously worked for.
                         </Typography>
                     </Grid>

@@ -13,13 +13,13 @@ const Job = ({
     theme
 }) => (
     <Grid xs={3}>
-        <Typography color='secondary' variant='h2'>
+        <Typography color={theme.palette.text.primary} variant='h2'>
             {`0${idx}`}
         </Typography>
-        <Typography color='primary' variant='body1'>
+        <Typography color={theme.palette.text.primary} variant='body1'>
             {`${job.company}, ${job.title}`}
         </Typography>
-        <Typography color='primary' variant='body2' sx={{ mt: 1 }}>
+        <Typography color={theme.palette.text.primary} variant='body2' sx={{ mt: 1 }}>
             {`${job.description}`}
         </Typography>
     </Grid>

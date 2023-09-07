@@ -13,7 +13,7 @@ const Home = ({
     const theme = useTheme();
     
     return (
-        <Section disableTopPadding>
+        <Section disableTopPadding disableBottomPadding disableHorizontalPadding>
             <ParallaxBanner
                 layers={[{ image: backgroundImage, speed: -25 }]}
                 style={{ height: '1000px' }}
