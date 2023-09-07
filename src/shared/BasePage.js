@@ -19,12 +19,19 @@ const BasePage = ({
     const theme = useTheme();
     
     return (
-        <Container maxWidth={false} style={{ background: theme.palette.background.primary }}>
+        <Container 
+            disableGutters
+            maxWidth={false} 
+            style={{ 
+                background: theme.palette.background.primary,
+                overflow: 'hidden'
+            }}
+        >
             <ProgressBar />
-            <Navbar />
+            {/* <Navbar /> */}
             <Home />
             <WorkExperience />
-            <Transition />
+            {/* <Transition /> */}
             <TechnicalSkills />
             <WorkingWithData />
             <Hobbies />

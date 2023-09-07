@@ -29,13 +29,13 @@ const LanguageCard = ({
                 {/* Name and icon */}
                 <Stack direction='row' alignItems='center'>
                     <CustomIcon image={language.icon} />
-                    <Typography color='secondary' variant='h6'>
+                    <Typography color='primary' variant='h6'>
                         {language.name}
                     </Typography>
                 </Stack>
 
                 {/* Language description */}
-                <Typography color='secondary' variant='body2'>
+                <Typography color='primary' variant='body2'>
                     {language.description}
                 </Typography>
 

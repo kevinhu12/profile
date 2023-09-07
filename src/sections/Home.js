@@ -1,17 +1,12 @@
-// Imports
 import React from 'react';
-
+import { ParallaxBanner } from 'react-scroll-parallax';
 import Box from '@mui/material/Box';
-import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
-
 import Section from '../shared/Section';
-import testimg from '../images/react-logo.png';
+import backgroundImage from '../images/background-lake.jpg';
 
-// Styled components
-
-// Main component
+// Component: displays the introductory section
 const Home = ({
 
 }) => {
@@ -19,25 +14,34 @@ const Home = ({
     
     return (
         <Section disableTopPadding>
-            <Grid container spacing={2}>
-                <Grid xs={5} sx={{ background: theme.palette.background.primary }}>
-                    <Typography color='primary'>
-                        <Box
-                            alt='My picture'
-                            component='img'
-                            src={testimg}
-                            sx={{ height: 600, width: 600 }}
-                        />
+            <ParallaxBanner
+                layers={[{ image: backgroundImage, speed: -25 }]}
+                style={{ height: '1000px' }}
+            >
+                <Box
+                    sx={{
+                        alignItems: 'center',
+                        display: 'flex',
+                        height: '100%',
+                        justifyContent: 'center'
+                    }}
+                >
+                    <Typography
+                        color='secondary'
+                        sx={{ mb: 10, position: 'absolute' }}
+                        variant='h1'
+                    >
+                        Hello!
                     </Typography>
-                </Grid>
-                <Grid xs={7} sx={{ background: theme.palette.background.secondary }}>
-                    <Typography color='secondary'>
-                        Description here <br />
-                        a <br />
-                        a <br />
+                    <Typography
+                        color='secondary'
+                        sx={{ mt: 20, position: 'absolute' }}
+                        variant='h3'
+                    >
+                        My name is Kevin.
                     </Typography>
-                </Grid>
-            </Grid>
+                </Box>
+            </ParallaxBanner>
         </Section>
     );
 }
