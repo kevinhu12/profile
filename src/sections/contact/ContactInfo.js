@@ -1,14 +1,13 @@
 import React from 'react';
-import Avatar from '@mui/material/Avatar';
-import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
+import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
-
-import avatarPic from '../../images/react-logo.png';
+import EmailIcon from '@mui/icons-material/Email';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Section from '../../shared/Section';
-import {
-} from './constants';
+import { contacts } from './constants';
 
 const ContactInfo = ({
 
@@ -16,41 +15,35 @@ const ContactInfo = ({
     const theme = useTheme();
     
     return (
-        <Section disableBottomPadding>
+        <Section background='primary'>
             <Grid container spacing={2} sx={{ overflow: 'hidden' }} justifyContent='center'>
-
-                {/* Section header */}
                 <Grid xs={12}>
-                    <Typography color='secondary' variant='subtitle2'>
-                        CONTACT ME!
-                    </Typography>
-                </Grid>
-
-                {/* Description */}
-                <Grid xs={5}>
                     <Typography color='primary' variant='h5'>
-                        Contact Me
-                    </Typography>
-                    <Typography color='primary' variant='body1'>
-                        I look forward to hearing from you!
+                        Feel free to reach out if you believe I'd be a good fit, I'd love to hear from you!
                     </Typography>
                 </Grid>
 
-                {/* Avatar */}
-                <Grid xs={2} display='flex' justifyContent='center'>
-                    <Avatar
-                        alt='Kevin Hu'
-                        src={avatarPic}
-                        sx={{ width: 200, height: 200 }}
-                    />
-                </Grid>
-
-                {/* Contact info */}
-                <Grid xs={5}>
-                    <Typography color='primary' variant='h5'>
-                        Details
-                    </Typography>
-                </Grid>
+                {contacts.map((contact, i) => (
+                    <Grid xs={4} display='flex' flexDirection='column' alignItems='center'>
+                        {/* TODO: move link to a "open in new tab" button beside the account instead (maybe) */} 
+                        {i === 0 ? (
+                            <GitHubIcon color='primary' fontSize='large' />
+                        ) : i === 1 ? (
+                            <EmailIcon color='primary' fontSize='large' />
+                        ) : (
+                            <LinkedInIcon color='primary' fontSize='large' />
+                        )}
+                        <Link 
+                            color='primary' 
+                            href={contact.link}
+                            target='_blank'
+                            underline='none'
+                            variant='h6'
+                        >
+                            {contact.name}
+                        </Link>
+                    </Grid>
+                ))}
             </Grid>
         </Section>
     );
