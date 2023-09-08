@@ -9,7 +9,12 @@ const HobbyCard = ({
     hobby,
     theme
 }) => (
-    <Card sx={{ width: 1100, maxWidth: 1100, display: 'flex' }}>
+    <Card sx={{
+        border: '0.15rem solid white',
+        display: 'flex',
+        width: 1100,
+        maxWidth: 1100
+    }}>
         {hobby.srcType === 'image' ? (
             <CardMedia
                 image={hobby.image}
@@ -25,10 +30,10 @@ const HobbyCard = ({
             />
         )}
         <CardContent>
-            <Typography gutterBottom color='tertiary' variant='h5'> 
+            <Typography gutterBottom color={theme.palette.text.secondary} variant='h5'> 
                 {hobby.name}
             </Typography>
-            <Typography color='tertiary' variant='body1'>
+            <Typography color={theme.palette.text.secondary} variant='body1'>
                 {hobby.description}
             </Typography>
         </CardContent>

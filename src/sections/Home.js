@@ -16,7 +16,7 @@ const Home = ({
         <Section disableTopPadding disableBottomPadding disableHorizontalPadding>
             <ParallaxBanner
                 layers={[{ image: backgroundImage, speed: -25 }]}
-                style={{ height: '1000px' }}
+                style={{ height: '40rem' }}
             >
                 <Box
                     sx={{

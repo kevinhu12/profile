@@ -32,14 +32,14 @@ const Hobbies = ({
     const theme = useTheme();
     
     return (
-        <Section>
+        <Section sx={{ backgroundColor: '#2b2d42' }}>
             <Grid container spacing={2}>
                 <Grid xs={12} display='flex' justifyContent='center'>
                     <div className='parallelogram' />
                 </Grid>
 
                 <Grid xs={12} display='flex' justifyContent='center'>
-                    <Typography color='primary' variant='h4'>
+                    <Typography color={theme.palette.text.primary} variant='h4'>
                         Hobbies
                     </Typography>
                 </Grid>
@@ -54,7 +54,7 @@ const Hobbies = ({
                             variants={cardVariants}
                             initial='offscreen'
                             whileInView='onscreen'
-                            // viewport={{ once: true }}
+                            viewport={{ once: true }}
                         >
                             <HobbyCard
                                 hobby={hobby}
