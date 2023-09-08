@@ -33,7 +33,7 @@ const BasePage = ({
             <WorkExperience />
             {/* <Transition /> */}
             <TechnicalSkills />
-            <WorkingWithData />
+            {/* <WorkingWithData /> */}
             <Hobbies />
             <ContactInfo />
         </Container>

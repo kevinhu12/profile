@@ -12,6 +12,9 @@ const theme = createTheme({
             tertiary: '#2b2d42', // dark blue
             default: '#ffffff' // white
         },
+        titles: {
+            blue: '#253c78'
+        },
         primary: { main: '#ffffff' }, // white
         secondary: { main: '#000000' } // black
     },

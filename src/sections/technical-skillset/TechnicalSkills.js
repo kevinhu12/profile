@@ -5,11 +5,10 @@ import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 import LanguageCard from './LanguageCard';
 import Section from '../../shared/Section';
-import { 
-    additionalLanguages,
-    descriptions,
-    languages,
-    tools
+import SummaryCard from './SummaryCard';
+import {
+    featuredLanguages,
+    otherLanguages
 } from './constants';
 
 // Component: displays the languages and frameworks section
@@ -23,39 +22,50 @@ const TechnicalSkills = ({
             <Grid container spacing={2} sx={{ overflow: 'hidden' }}>
 
                 {/* Section header */}
-                <Grid xs={12} display='flex' justifyContent='center'>
-                    <div className='parallelogram' />
-                </Grid>
-                <Grid xs={12} display='flex' justifyContent='center'>
-                    <Typography color='secondary' variant='h4'>
-                        Technical Skills
-                    </Typography>
-                </Grid>
-                <Grid xs={12} display='flex' justifyContent='center'>
-                    <div className='parallelogram' />
-                </Grid>
-
-                {/* Description */}
                 <Grid xs={12}>
-                    <Typography color='secondary' variant='h5'>
+                    <Typography 
+                        color={theme.palette.titles.blue}
+                        variant='h4'
+                        sx={{ fontWeight: 'bold' }}
+                    >
                         Languages and Frameworks
                     </Typography>
                     <Typography color='secondary' variant='body1' sx={{ mt: 1 }}>
-                        {descriptions.languages}
+                        Throughout my university courses and previous work experiences, 
+                        I have been introduced to—and familiarized myself with—a wide variety 
+                        of programming languages. Here are some of my favourite ones, as well 
+                        as the frameworks and libraries that I have used alongside them.
                     </Typography>
                 </Grid>
 
-                {/* Languages and Frameworks */}
-                {languages.map((language) => (
-                    <Grid xs={6} display='flex' justifyContent='center'>
-                        <motion.div 
-                            initial={{ x: 300 }} 
-                            whileInView={{ x: 0, transition: { type: 'sprint', bounce: 0.4, duration: 1 } }}
+                {/* Featured Languages */}
+                <Grid 
+                    xs={5} 
+                    display='flex' 
+                    flexDirection='column' 
+                    justifyContent='center' 
+                    alignItems='center'
+                >
+                    {featuredLanguages.map((language) => (
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.5 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ ease: [0,0.71,0.2,1.01], duration: 0.8, delay: 0.1 }}
                         >
                             <LanguageCard language={language} theme={theme} />
                         </motion.div>
-                    </Grid>
-                ))}
+                    ))}
+                </Grid>
+
+                {/* Aptitude Meter */}
+                <Grid 
+                    xs={7}
+                    display='flex'
+                    justifyContent='center'
+                >
+                    <SummaryCard languages={otherLanguages} theme={theme} />
+                </Grid>
+
             </Grid>
         </Section>
     );

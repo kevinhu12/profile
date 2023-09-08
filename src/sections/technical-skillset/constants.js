@@ -10,16 +10,11 @@ import reduxLogo from '../../images/redux-logo.png';
 import seleniumLogo from '../../images/selenium-logo.png';
 import telerikLogo from '../../images/telerik-logo.png';
 
-export const languages = [
+export const featuredLanguages = [
     {
         name: 'C#',
         description: 'My language of choice! Working with this language during my time at SPS Commerce and SEH Computer Systems has shown me the power of C#, coupled with its refined syntax.',
-        icon: {
-            name: 'C#',
-            src: cSharpLogo,
-            height: 45,
-            width: 40
-        },
+        icon: { name: 'C#', src: cSharpLogo, height: 45, width: 40 },
         frameworks: [
             {
                 name: 'ASP.NET Core',
@@ -51,75 +46,79 @@ export const languages = [
             },
         ]
     },
+    // {
+    //     name: 'JavaScript & TypeScript',
+    //     description: 'Two languages that I find myself using whenever I am building a small project or application. After programming with a combination of both at Spotwork, I find its ease of use appealing.',
+    //     icon: { name: 'JavaScript & TypeScript', src: jsTsLogo, height: 45, width: 40 },
+    //     frameworks: [
+    //         {
+    //             name: 'React.js',
+    //             description: 'desc for react',
+    //             src: reactLogo,
+    //             height: 45,
+    //             width: 40
+    //         },
+    //         {
+    //             name: 'Node.js',
+    //             description: 'desc for node',
+    //             src: nodeLogo,
+    //             height: 45,
+    //             width: 40
+    //         },
+    //         {
+    //             name: 'Redux',
+    //             description: 'desc for redux',
+    //             src: reduxLogo,
+    //             height: 45,
+    //             width: 40
+    //         },
+    //         {
+    //             name: 'Material UI',
+    //             description: 'desc for mui',
+    //             src: materialUiLogo,
+    //             height: 45,
+    //             width: 40
+    //         },
+    //         {
+    //             name: 'Selenium',
+    //             description: 'desc for selenium',
+    //             src: seleniumLogo,
+    //             height: 45,
+    //             width: 40
+    //         }
+    //     ]
+    // }
+];
+
+export const otherLanguages = [
     {
         name: 'JavaScript & TypeScript',
-        description: 'Two languages that I find myself using whenever I am building a small project or application. After programming with a combination of both at Spotwork, I find its ease of use appealing.',
-        icon: {
-            name: 'JavaScript & TypeScript',
-            src: jsTsLogo,
-            height: 45,
-            width: 40
-        },
-        frameworks: [
-            {
-                name: 'React.js',
-                description: 'desc for react',
-                src: reactLogo,
-                height: 45,
-                width: 40
-            },
-            {
-                name: 'Node.js',
-                description: 'desc for node',
-                src: nodeLogo,
-                height: 45,
-                width: 40
-            },
-            {
-                name: 'Redux',
-                description: 'desc for redux',
-                src: reduxLogo,
-                height: 45,
-                width: 40
-            },
-            {
-                name: 'Material UI',
-                description: 'desc for mui',
-                src: materialUiLogo,
-                height: 45,
-                width: 40
-            },
-            {
-                name: 'Selenium',
-                description: 'desc for selenium',
-                src: seleniumLogo,
-                height: 45,
-                width: 40
-            }
-        ]
+        level: 80,
+        description: 'idk'
+    },
+    {
+        name: 'C++ & C',
+        level: 70,
+        description: 'c'
+    },
+    { 
+        name: 'Python',
+        level: 60,
+        description: 'python'
+    },
+    { 
+        name: 'Java', 
+        level: 30,
+        description: 'The first programming language I learned! It\'s been a while since I\'ve used it, but I\'m always open to revisiting it.'
     }
 ];
 
-export const additionalLanguages = [
-    'C++',
-    'C',
-    'Python',
-    'Java',
-    'Web Languages (HTML, CSS) with Bootstrap'
-];
-
-export const tools = {
-    name: 'Version Control Tools',
-    examples: [
-        'Tickets and Pipelines: Jira, Azure and Azure DevOps',
-        'Scripting: Linux, Bash, PowerShell',
-        'Version Control: Git, Github',
-        'API Testing: Postman'
-    ]
-};
-
-export const descriptions = {
-    languages: 'Throughout my university courses and previous work experiences, I have been introduced to—and familiarized myself with—a wide variety of programming languages. Here are some of my favourite ones, as well as the frameworks and libraries that I have used alongside them.',
-    additionalLanguages: 'Some other languages and frameworks that I have experience in are:',
-    tools: 'Some databases and general coding tools that I have used.'
-};
+// export const tools = {
+//     name: 'Version Control Tools',
+//     examples: [
+//         'Tickets and Pipelines: Jira, Azure and Azure DevOps',
+//         'Scripting: Linux, Bash, PowerShell',
+//         'Version Control: Git, Github',
+//         'API Testing: Postman'
+//     ]
+// };
