@@ -39,7 +39,7 @@ const Hobbies = ({
                 </Grid>
 
                 <Grid xs={12} display='flex' justifyContent='center'>
-                    <Typography color={theme.palette.text.primary} variant='h4'>
+                    <Typography color='primary' variant='h4'>
                         Hobbies
                     </Typography>
                 </Grid>

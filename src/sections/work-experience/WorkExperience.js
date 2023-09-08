@@ -23,7 +23,7 @@ const WorkExperience = ({
                 </Grid>
 
                 <Grid xs={12} display='flex' justifyContent='center'>
-                    <Typography color={theme.palette.text.primary} variant='h4'>
+                    <Typography color='primary' variant='h4'>
                         Work Experience
                     </Typography>
                 </Grid>
@@ -34,7 +34,7 @@ const WorkExperience = ({
 
                 {/* <Parallax translateX={[-24,100]}> */}
                     <Grid xs={12}>
-                        <Typography color={theme.palette.text.primary} variant='h5'>
+                        <Typography color='primary' variant='h5'>
                             Some companies that I have previously worked for.
                         </Typography>
                     </Grid>

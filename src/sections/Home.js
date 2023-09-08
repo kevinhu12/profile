@@ -27,14 +27,14 @@ const Home = ({
                     }}
                 >
                     <Typography
-                        color='secondary'
+                        color='primary'
                         sx={{ mb: 10, position: 'absolute' }}
                         variant='h1'
                     >
                         Hello!
                     </Typography>
                     <Typography
-                        color='secondary'
+                        color='primary'
                         sx={{ mt: 20, position: 'absolute' }}
                         variant='h3'
                     >

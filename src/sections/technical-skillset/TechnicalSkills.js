@@ -27,7 +27,7 @@ const TechnicalSkills = ({
                     <div className='parallelogram' />
                 </Grid>
                 <Grid xs={12} display='flex' justifyContent='center'>
-                    <Typography color='primary' variant='h4'>
+                    <Typography color='secondary' variant='h4'>
                         Technical Skills
                     </Typography>
                 </Grid>
@@ -37,10 +37,10 @@ const TechnicalSkills = ({
 
                 {/* Description */}
                 <Grid xs={12}>
-                    <Typography color='primary' variant='h5'>
+                    <Typography color='secondary' variant='h5'>
                         Languages and Frameworks
                     </Typography>
-                    <Typography color='primary' variant='body1' sx={{ mt: 1 }}>
+                    <Typography color='secondary' variant='body1' sx={{ mt: 1 }}>
                         {descriptions.languages}
                     </Typography>
                 </Grid>

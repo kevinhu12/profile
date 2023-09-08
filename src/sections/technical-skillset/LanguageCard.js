@@ -29,13 +29,13 @@ const LanguageCard = ({
                 {/* Name and icon */}
                 <Stack direction='row' alignItems='center'>
                     <CustomIcon image={language.icon} />
-                    <Typography color='primary' variant='h6'>
+                    <Typography color='secondary' variant='h6'>
                         {language.name}
                     </Typography>
                 </Stack>
 
                 {/* Language description */}
-                <Typography color='primary' variant='body2'>
+                <Typography color='secondary' variant='body2'>
                     {language.description}
                 </Typography>
 
@@ -56,7 +56,7 @@ const LanguageCard = ({
                                         <CustomIcon image={framework} />
                                         <ListItemText 
                                             primary={framework.name} 
-                                            primaryTypographyProps={{ color: 'primary' }}
+                                            primaryTypographyProps={{ color: 'secondary' }}
                                             sx={{ ml: 1 }} 
                                         />
                                     </ListItemButton>
@@ -69,12 +69,12 @@ const LanguageCard = ({
                     {/* MAYBE: add height: 90% to card */}
                     <Grid xs={7} display='flex' justifyContent='center' alignItems='center'>
                         {selection === null ? (
-                            <Typography color='primary'>
+                            <Typography color='secondary'>
                                 Click on a library or framework to learn more!
                             </Typography>
                         ) : (
                             <Card sx={{ m: 2, backgroundColor: theme.palette.background.secondary }}>
-                                <Typography color='primary' sx={{ m: 2 }}>
+                                <Typography color='secondary' sx={{ m: 2 }}>
                                     {language.frameworks[selection].description}
                                 </Typography>
                             </Card>

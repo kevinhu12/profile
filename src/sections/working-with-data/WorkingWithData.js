@@ -34,7 +34,7 @@ const WorkingWithData = ({
                     <div className='parallelogram' />
                 </Grid>
                 <Grid xs={12} display='flex' justifyContent='center'>
-                    <Typography color='primary' variant='h4'>
+                    <Typography color='secondary' variant='h4'>
                         Working with Data
                     </Typography>
                 </Grid>
@@ -44,10 +44,10 @@ const WorkingWithData = ({
 
                 {/* Description */}
                 <Grid xs={3}>
-                    <Typography color='primary' variant='h5'>
+                    <Typography color='secondary' variant='h5'>
                         Databases
                     </Typography>
-                    <Typography color='primary' variant='body1'>
+                    <Typography color='secondary' variant='body1'>
                         Here are some of the databases I've worked with.
                     </Typography>
                 </Grid>

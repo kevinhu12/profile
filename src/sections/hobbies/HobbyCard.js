@@ -30,10 +30,10 @@ const HobbyCard = ({
             />
         )}
         <CardContent>
-            <Typography gutterBottom color={theme.palette.text.secondary} variant='h5'> 
+            <Typography gutterBottom color='secondary' variant='h5'> 
                 {hobby.name}
             </Typography>
-            <Typography color={theme.palette.text.secondary} variant='body1'>
+            <Typography color='secondary' variant='body1'>
                 {hobby.description}
             </Typography>
         </CardContent>

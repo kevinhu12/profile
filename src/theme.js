@@ -12,12 +12,8 @@ const theme = createTheme({
             tertiary: '#2b2d42', // dark blue
             default: '#ffffff' // white
         },
-        text: {
-            primary: '#ffffff', // white
-            secondary: '#000000', // black
-        },
-        primary: { main: '#000000' }, // black
-        secondary: { main: '#ffffff' } // white
+        primary: { main: '#ffffff' }, // white
+        secondary: { main: '#000000' } // black
     },
     sectionSpacing: {
         horizontal: 50,
