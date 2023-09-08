@@ -19,7 +19,7 @@ const TechnicalSkills = ({
     const theme = useTheme();
     
     return (
-        <Section>
+        <Section background='secondary'>
             <Grid container spacing={2} sx={{ overflow: 'hidden' }}>
 
                 {/* Section header */}

@@ -23,7 +23,7 @@ const LanguageCard = ({
     };
     
     return (
-        <Card sx={{ maxWidth: '34rem', backgroundColor: theme.palette.background.secondary }}>
+        <Card sx={{ maxWidth: '34rem', backgroundColor: theme.palette.background.default }}>
             <CardContent>
 
                 {/* Name and icon */}
@@ -73,7 +73,7 @@ const LanguageCard = ({
                                 Click on a library or framework to learn more!
                             </Typography>
                         ) : (
-                            <Card sx={{ m: 2, backgroundColor: theme.palette.background.primary }}>
+                            <Card sx={{ m: 2, backgroundColor: theme.palette.background.secondary }}>
                                 <Typography color='primary' sx={{ m: 2 }}>
                                     {language.frameworks[selection].description}
                                 </Typography>

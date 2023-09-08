@@ -32,7 +32,7 @@ const Hobbies = ({
     const theme = useTheme();
     
     return (
-        <Section sx={{ backgroundColor: '#2b2d42' }}>
+        <Section background='tertiary'>
             <Grid container spacing={2}>
                 <Grid xs={12} display='flex' justifyContent='center'>
                     <div className='parallelogram' />

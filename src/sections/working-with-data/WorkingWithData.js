@@ -26,7 +26,7 @@ const WorkingWithData = ({
     };
     
     return (
-        <Section>
+        <Section background='secondary'>
             <Grid container spacing={2} sx={{ overflow: 'hidden' }} justifyContent='center'>
 
                 {/* Section header */}

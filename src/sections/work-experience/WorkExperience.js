@@ -15,7 +15,7 @@ const WorkExperience = ({
     const theme = useTheme();
     
     return (
-        <Section sx={{ backgroundColor: '#000000'}}>
+        <Section background='primary'>
             <Grid container spacing={2} sx={{ overflow: 'hidden' }}>
 
                 <Grid xs={12} display='flex' justifyContent='center'>

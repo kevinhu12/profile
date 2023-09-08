@@ -7,10 +7,10 @@ const theme = createTheme({
     },
     palette: {
         background: {
-            primary: '#efe4dc', // beige
-            secondary: '#ffffff', // champagne pink
-            tertiary: '#acbdba', // ash gray
-            quatanary: '#ffffff', // white
+            primary: '#000000', // black
+            secondary: '#efe4dc', // beige
+            tertiary: '#2b2d42', // dark blue
+            default: '#ffffff' // white
         },
         text: {
             primary: '#ffffff', // white

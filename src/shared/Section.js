@@ -3,12 +3,16 @@ import { styled } from '@mui/system';
 
 // Styled Component: box container for a section
 const Section = styled(Box)(({
+    background,
     disableTopPadding,
     disableBottomPadding,
     disableHorizontalPadding,
     theme 
 }) => ({
-    backgroundColor: theme.palette.background.primary,
+    backgroundColor: background === 'primary' ? theme.palette.background.primary
+        : background === 'secondary' ? theme.palette.background.secondary
+        : background === 'tertiary' ? theme.palette.background.tertiary
+        : theme.palette.background.default,
     paddingLeft: theme.sectionSpacing.horizontal,
     paddingRight: theme.sectionSpacing.horizontal,
     paddingTop: disableTopPadding
