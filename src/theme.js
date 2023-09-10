@@ -13,7 +13,8 @@ const theme = createTheme({
             default: '#ffffff' // white
         },
         titles: {
-            blue: '#253c78'
+            blue: '#253c78',
+            orange: '#ff9b71'
         },
         primary: { main: '#ffffff' }, // white
         secondary: { main: '#000000' } // black

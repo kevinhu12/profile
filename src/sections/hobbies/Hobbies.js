@@ -1,29 +1,11 @@
 import React from 'react';
-
+import { motion } from 'framer-motion';
 import Box from '@mui/material/Box';
-import Grid from '@mui/material/Unstable_Grid2';
-import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
-
 import HobbyCard from './HobbyCard';
 import Section from '../../shared/Section';
-import { hobbies } from './constants';
-import { motion } from 'framer-motion';
-
-const cardVariants = {
-    offscreen: {
-        y: 300
-    },
-    onscreen: {
-        y: 0,
-        transition: {
-            type: 'spring',
-            bounce: 0.4,
-            duration: 1
-        }
-    }
-};
+import { hobbies, sizes } from './constants';
 
 // Component: hobby section
 const Hobbies = ({
@@ -33,37 +15,32 @@ const Hobbies = ({
     
     return (
         <Section background='tertiary'>
-            <Grid container spacing={2}>
-                <Grid xs={12} display='flex' justifyContent='center'>
-                    <div className='parallelogram' />
-                </Grid>
-
-                <Grid xs={12} display='flex' justifyContent='center'>
-                    <Typography color='primary' variant='h4'>
-                        Hobbies
-                    </Typography>
-                </Grid>
-
-                <Grid xs={12} display='flex' justifyContent='center'>
-                    <div className='parallelogram' />
-                </Grid>
-
+            <Typography 
+                color={theme.palette.titles.orange}
+                variant='h4'
+                sx={{ fontWeight: 'bold' }}
+            >
+                Hobbies
+            </Typography>
+            <Typography color='primary' variant='h6' sx={{ mt: 2 }}>
+                Some things I do for fun in my spare time!
+            </Typography>
+            <Box display='flex' flexDirection='column' alignItems='center'>
                 {hobbies.map((hobby) => (
-                    <Grid xs={12} display='flex' justifyContent='center'>
-                        <motion.div
-                            variants={cardVariants}
-                            initial='offscreen'
-                            whileInView='onscreen'
-                            viewport={{ once: true }}
-                        >
-                            <HobbyCard
-                                hobby={hobby}
-                                theme={theme}
-                            />
-                        </motion.div>
-                    </Grid>
+                    <motion.div
+                        initial={{ y: 300 }}
+                        whileInView={{ y: 0, transition: { type: 'spring', bounce: 0.4, duration: 1 }}}
+                        viewport={{ once: true }}
+                        style={{ marginTop: '2rem' }}
+                    >
+                        <HobbyCard
+                            hobby={hobby}
+                            sizes={sizes}
+                            theme={theme}
+                        />
+                    </motion.div>
                 ))}
-            </Grid>
+            </Box>
         </Section>
     );
 }
