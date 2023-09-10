@@ -30,7 +30,7 @@ const TechnicalSkills = ({
                     >
                         Languages and Frameworks
                     </Typography>
-                    <Typography color='secondary' variant='body1' sx={{ mt: 1 }}>
+                    <Typography color='secondary' variant='h6' sx={{ mt: 2, mb: 2 }}>
                         Throughout my university courses and previous work experiences, 
                         I have been introduced to—and familiarized myself with—a wide variety 
                         of programming languages. Here are some of my favourite ones, as well 
@@ -46,13 +46,17 @@ const TechnicalSkills = ({
                     justifyContent='center' 
                     alignItems='center'
                 >
-                    {featuredLanguages.map((language) => (
+                    {featuredLanguages.map((language, i) => (
                         <motion.div
                             initial={{ opacity: 0, scale: 0.5 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ ease: [0,0.71,0.2,1.01], duration: 0.8, delay: 0.1 }}
                         >
-                            <LanguageCard language={language} theme={theme} />
+                            <LanguageCard 
+                                language={language}
+                                disableTopPadding={i === 0}
+                                theme={theme}
+                            />
                         </motion.div>
                     ))}
                 </Grid>

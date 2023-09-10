@@ -13,25 +13,24 @@ const SummaryCard = ({
 }) => (
     <Card sx={{ maxWidth: '40rem', width: '100%', backgroundColor: theme.palette.background.default }}>
         <CardContent>
-
             <Stack direction='column' spacing={3}>
                 {languages.map((language) => (
                     <Box>
-                        <Typography color='secondary' variant='h6'>
+                        <Typography color='secondary' variant='h6' sx={{ fontWeight: 'bold' }}>
                             {language.name}
                         </Typography>
+                        {/* TODO: remove slider thumbs (circles) */}
                         <Slider
                             aria-label={`${language.name}-slider`}
                             value={language.level}
                             disabled
                         />
-                        <Typography color='secondary' variant='subtitle1'>
+                        <Typography color='secondary' variant='body1'>
                             {language.description}
                         </Typography>
                     </Box>
                 ))}
             </Stack>
-
         </CardContent>
     </Card>
 );

@@ -1,89 +1,45 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import Grid from '@mui/material/Unstable_Grid2';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
+import Slider from '@mui/material/Slider';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import CustomIcon from '../../shared/CustomIcon';
 
-// Component: displays a language
+// Component: displays a featured language
 const LanguageCard = ({
     language,
+    disableTopPadding,
     theme
-}) => {
-    const [selection, setSelection] = useState(null); // track index of selected framework/library
-
-    const handleSelection = (idx) => {
-        if (idx === selection) setSelection(null);
-        else setSelection(idx);
-    };
-    
-    return (
-        <Card sx={{ maxWidth: '34rem', backgroundColor: theme.palette.background.default }}>
-            <CardContent>
-
-                {/* Name and icon */}
-                <Stack direction='row' alignItems='center'>
-                    <CustomIcon image={language.icon} />
-                    <Typography color='secondary' variant='h6'>
-                        {language.name}
-                    </Typography>
-                </Stack>
-
-                {/* Language description */}
-                <Typography color='secondary' variant='body2'>
-                    {language.description}
+}) => (
+    <Card 
+        sx={{ 
+            maxWidth: '34rem', 
+            backgroundColor: theme.palette.background.default,
+            mt: disableTopPadding ? 0 : 3
+        }}
+    >
+        <CardContent>
+            <Stack direction='row' alignItems='center' spacing={2}>
+                <CustomIcon image={language.icon} />
+                {/* TODO: remove slider thumbs (circles) */}
+                <Slider
+                    aria-label={`${language.name}-slider`}
+                    value={language.level}
+                    disabled
+                />
+            </Stack>
+            
+            <Typography color='secondary' variant='body1' sx={{ mt: 3 }}>
+                {language.description}
+            </Typography>
+            {language.subsections.map((subsection) => (
+                <Typography color='secondary' variant='body1' sx={{ mt: 3 }}>
+                    {subsection}
                 </Typography>
-
-                <Grid container>
-
-                    {/* Frameworks and libraries */}
-                    <Grid xs={5}>
-                        <List dense={true}>
-                            {language.frameworks.map((framework, idx) => (
-                                <ListItem disableGutters>
-                                    <ListItemButton 
-                                        selected={idx === selection}
-                                        sx={{
-                                            borderRadius: '50px'
-                                        }}
-                                        onClick={() => handleSelection(idx)}
-                                    >
-                                        <CustomIcon image={framework} />
-                                        <ListItemText 
-                                            primary={framework.name} 
-                                            primaryTypographyProps={{ color: 'secondary' }}
-                                            sx={{ ml: 1 }} 
-                                        />
-                                    </ListItemButton>
-                                </ListItem>
-                            ))}
-                        </List>
-                    </Grid>
-
-                    {/* Framework/library description */}
-                    {/* MAYBE: add height: 90% to card */}
-                    <Grid xs={7} display='flex' justifyContent='center' alignItems='center'>
-                        {selection === null ? (
-                            <Typography color='secondary'>
-                                Click on a library or framework to learn more!
-                            </Typography>
-                        ) : (
-                            <Card sx={{ m: 2, backgroundColor: theme.palette.background.secondary }}>
-                                <Typography color='secondary' sx={{ m: 2 }}>
-                                    {language.frameworks[selection].description}
-                                </Typography>
-                            </Card>
-                        )}
-                    </Grid>
-                </Grid>
-            </CardContent>
-        </Card>
-    )
-};
+            ))}
+        </CardContent>
+    </Card>
+);
 
 export default LanguageCard;
