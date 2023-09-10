@@ -14,7 +14,8 @@ const theme = createTheme({
         },
         titles: {
             blue: '#253c78',
-            orange: '#ff9b71'
+            orange: '#ff9b71',
+            skyBlue: '#56cbf9',
         },
         primary: { main: '#ffffff' }, // white
         secondary: { main: '#000000' } // black

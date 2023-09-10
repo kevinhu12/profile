@@ -28,17 +28,17 @@ const Home = ({
                 >
                     <Typography
                         color='primary'
-                        sx={{ mb: 10, position: 'absolute' }}
+                        sx={{ mb: 20, position: 'absolute' }}
                         variant='h1'
                     >
                         Hello!
                     </Typography>
                     <Typography
                         color='primary'
-                        sx={{ mt: 20, position: 'absolute' }}
+                        sx={{ mt: 10, position: 'absolute' }}
                         variant='h3'
                     >
-                        My name is Kevin.
+                        I'm Kevin, an aspiring developer in the software world.
                     </Typography>
                 </Box>
             </ParallaxBanner>
