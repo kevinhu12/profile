@@ -1,0 +1,15 @@
+{
+  "short_name": "Kevin's Website",
+  "name": "Kevin Hu | Software Developer",
+  "icons": [
+    {
+      "src": "site-logo-final.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

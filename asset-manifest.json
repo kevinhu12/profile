@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/profile/static/css/main.aa4aee26.css",
+    "main.js": "/profile/static/js/main.8b6406f8.js",
+    "static/media/destiny.png": "/profile/static/media/destiny.dc0100fb246ee4d70251.png",
+    "static/media/athletics-soccer.jpg": "/profile/static/media/athletics-soccer.af79a69d9656a526446e.jpg",
+    "static/media/headshot.jpg": "/profile/static/media/headshot.3842a4c066e0bb2eca9f.jpg",
+    "static/media/background-lake.jpg": "/profile/static/media/background-lake.ca5a6e7ddd2a021e9be8.jpg",
+    "static/media/sql-logo.png": "/profile/static/media/sql-logo.85fb38d6773862e917f4.png",
+    "static/media/seh-logo.png": "/profile/static/media/seh-logo.e7b1abb0bd2c4b0e43d6.png",
+    "static/media/spotwork-logo.png": "/profile/static/media/spotwork-logo.f4e1d82de8f8c3a8c7dc.png",
+    "static/media/iotum-logo.png": "/profile/static/media/iotum-logo.1634ca31f6bdbd21cd7e.png",
+    "index.html": "/profile/index.html",
+    "main.aa4aee26.css.map": "/profile/static/css/main.aa4aee26.css.map",
+    "main.8b6406f8.js.map": "/profile/static/js/main.8b6406f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa4aee26.css",
+    "static/js/main.8b6406f8.js"
+  ]
+}
