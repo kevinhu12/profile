@@ -24,7 +24,7 @@ const ContactInfo = ({
                 </Grid>
 
                 {contacts.map((contact, i) => (
-                    <Grid xs={4} display='flex' flexDirection='column' alignItems='center'>
+                    <Grid xs={12} sm={4} display='flex' flexDirection='column' alignItems='center'>
                         {/* TODO: move link to a "open in new tab" button beside the account instead (maybe) */} 
                         {i === 0 ? (
                             <GitHubIcon color='primary' fontSize='large' />

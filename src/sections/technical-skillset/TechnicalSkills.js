@@ -46,7 +46,8 @@ const TechnicalSkills = ({
 
                 {/* Featured Languages */}
                 <Grid 
-                    xs={5} 
+                    xs={12}
+                    md={5}
                     display='flex' 
                     flexDirection='column' 
                     justifyContent='center' 
@@ -69,7 +70,8 @@ const TechnicalSkills = ({
 
                 {/* Aptitude Meter */}
                 <Grid 
-                    xs={7}
+                    xs={12}
+                    md={7}
                     display='flex'
                     justifyContent='center'
                 >

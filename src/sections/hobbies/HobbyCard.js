@@ -12,7 +12,6 @@ const HobbyCard = ({
     theme
 }) => (
     <Card
-        // className='mobileView'
         sx={{
             border: '0.15rem solid white',
             display: 'flex',

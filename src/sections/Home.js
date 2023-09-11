@@ -34,6 +34,7 @@ const Home = ({
                         Hello!
                     </Typography>
                     <Typography
+                        align='center'
                         color='primary'
                         sx={{ mt: 10, position: 'absolute' }}
                         variant='h3'
