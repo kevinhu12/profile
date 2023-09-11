@@ -16,7 +16,17 @@ const HobbyCard = ({
             border: '0.15rem solid white',
             display: 'flex',
             width: sizes.cardWidth,
-            maxWidth: sizes.cardWidth
+            maxWidth: sizes.cardWidth,
+            [theme.breakpoints.down('md')]: {
+                width: sizes.cardWidthMd,
+                maxWidth: sizes.cardWidthMd,
+                flexDirection: 'column'
+            },
+            [theme.breakpoints.down('sm')]: {
+                width: sizes.cardWidthSm,
+                maxWidth: sizes.cardWidthSm,
+                flexDirection: 'column'
+            },
         }}
     >
         <Box display='flex' alignItems='center'>
@@ -24,18 +34,34 @@ const HobbyCard = ({
                 <CardMedia
                     image={hobby.image}
                     title={hobby.name}
-                    sx={{ width: sizes.mediaWidth, height: sizes.mediaHeight }}
+                    sx={{
+                        width: sizes.mediaWidth,
+                        height: sizes.mediaHeight,
+                        [theme.breakpoints.down('md')]: { width: sizes.cardWidthMd },
+                        [theme.breakpoints.down('sm')]: { width: sizes.cardWidthSm }
+                    }}
                 />
             ) : (
                 <CardMedia
                     component='iframe'
                     title={hobby.name}
                     src={`https://www.youtube.com/embed/${hobby.videoId}`}
-                    sx={{ width: sizes.mediaWidth, height: sizes.mediaHeight }}
+                    sx={{
+                        width: sizes.mediaWidth,
+                        height: sizes.mediaHeight,
+                        [theme.breakpoints.down('md')]: { width: sizes.cardWidthMd },
+                        [theme.breakpoints.down('sm')]: { width: sizes.cardWidthSm }
+                    }}
                 />
             )}
         </Box>
-        <CardContent sx={{ maxWidth: sizes.textWidth }}>
+        <CardContent
+            sx={{
+                maxWidth: sizes.textWidth,
+                [theme.breakpoints.down('md')]: { maxWidth: sizes.cardWidthMd },
+                [theme.breakpoints.down('sm')]: { maxWidth: sizes.cardWidthSm }
+            }}
+        >
             <Typography color='secondary' variant='h5' sx={{ fontWeight: 'bold' }}> 
                 {hobby.name}
             </Typography>

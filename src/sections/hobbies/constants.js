@@ -37,7 +37,9 @@ export const hobbies = [
 ];
 
 export const sizes = {
-    cardWidth: 1000,
+    cardWidthMax: 1000,
+    cardWidthMd: 580,
+    cardWidthSm: 320,
     mediaWidth: 450,
     mediaHeight: 400,
     textWidth: 550,
