@@ -36,7 +36,7 @@ const Home = ({
                     <Typography
                         align='center'
                         color='primary'
-                        sx={{ mt: 10, position: 'absolute' }}
+                        sx={{ mt: 10, position: 'absolute', backgroundColor: '#00000060' }}
                         variant='h3'
                     >
                         I'm Kevin, an aspiring developer in the software world.
