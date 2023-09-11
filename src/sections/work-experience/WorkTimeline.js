@@ -1,4 +1,5 @@
 import React from 'react';
+import Avatar from '@mui/material/Avatar';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -8,7 +9,7 @@ import TimelineOppositeContent, { timelineOppositeContentClasses } from '@mui/la
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 
-import RepeatIcon from '@mui/icons-material/Repeat';
+import CustomIcon from '../../shared/CustomIcon';
 
 const WorkTimeline = ({
     jobs,
@@ -42,8 +43,11 @@ const WorkTimeline = ({
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                     <TimelineConnector />
-                    <TimelineDot>
-                        <RepeatIcon />
+                    <TimelineDot color='primary'>
+                        <CustomIcon image={job.logo} />
+                        {/* <Avatar
+                            src={job.logo.src}
+                        /> */}
                     </TimelineDot>
                     <TimelineConnector />
                 </TimelineSeparator>

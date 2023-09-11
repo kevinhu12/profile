@@ -24,7 +24,7 @@ const AboutMe = ({
                 I'm a fast learner who's passionate about writing good code, strengthening my programming arsenal, and working with new technologies.
             </Typography>
             <Typography color='primary' variant='h5' sx={{ mb: 2 }}>
-                Currently, I'm seeking an intership for Winter 2024!
+                Currently, I'm seeking an internship for Winter 2024!
             </Typography>
         </Grid>
     </Grid>
