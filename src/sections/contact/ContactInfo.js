@@ -18,8 +18,8 @@ const ContactInfo = ({
         <Section background='primary'>
             <Grid container spacing={2} sx={{ overflow: 'hidden' }} justifyContent='center'>
                 <Grid xs={12}>
-                    <Typography color='primary' variant='h5'>
-                        Feel free to reach out if you believe I'd be a good fit, I'd love to hear from you!
+                    <Typography align='center' color='primary' variant='h5'>
+                        Feel free to reach out, I'd love to hear from you!
                     </Typography>
                 </Grid>
 
@@ -34,11 +34,12 @@ const ContactInfo = ({
                             <LinkedInIcon color='primary' fontSize='large' />
                         )}
                         <Link 
-                            color='primary' 
+                            color={theme.palette.titles.skyBlue}
                             href={contact.link}
                             target='_blank'
                             underline='none'
                             variant='h6'
+                            sx={{ '&:hover': { color: theme.palette.titles.blue } }}
                         >
                             {contact.name}
                         </Link>

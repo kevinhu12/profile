@@ -4,8 +4,8 @@ export const contacts = [
         link: 'https://github.com/kevinhu12'
     },
     {
-        name: 'kevinhu273@gmail.com',
-        link: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=kevinhu273@gmail.com'
+        name: 'k57hu@uwaterloo.ca',
+        link: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=k57hu@uwaterloo.ca'
     },
     {
         name: 'kevinhu12',
