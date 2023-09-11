@@ -9,7 +9,7 @@ export const featuredLanguages = [
         icon: { name: 'C#', src: cSharpLogo, height: 45, width: 40 },
         subsections: [
             'During my time at SEH Computer Systems, I developed web applications using a MVC pattern supported by ASP.NET Core. The Blazor framework was used to build the majority of UIs, along with components provided by Telerik.',
-            'I had the experience of using C# as a backend when working for SPS Commerce and SEH Computer Systems. I used Entity Framework to query data via LINQ queries, communicated with AWS products through the AWS CDK, and developed APIs to process data as desired.'
+            'I had the experience of using C# as a backend when working for SPS Commerce as well as SEH Computer Systems. I used Entity Framework to query data via LINQ queries, communicated with AWS products through the AWS CDK, and developed APIs to process data as desired.'
         ]
     },
     {

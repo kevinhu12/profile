@@ -11,12 +11,15 @@ const HobbyCard = ({
     sizes,
     theme
 }) => (
-    <Card sx={{
-        border: '0.15rem solid white',
-        display: 'flex',
-        width: sizes.cardWidth,
-        maxWidth: sizes.cardWidth
-    }}>
+    <Card
+        // className='mobileView'
+        sx={{
+            border: '0.15rem solid white',
+            display: 'flex',
+            width: sizes.cardWidth,
+            maxWidth: sizes.cardWidth
+        }}
+    >
         <Box display='flex' alignItems='center'>
             {hobby.srcType === 'image' ? (
                 <CardMedia

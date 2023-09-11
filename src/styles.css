@@ -31,3 +31,9 @@ code {
   border-bottom: 0.45em solid #DBD8F0;
   transform: skew(-10deg);
 }
+
+/* @media (max-width: 768px) {
+  .mobileView {
+    flex-direction: column;
+  }
+} */

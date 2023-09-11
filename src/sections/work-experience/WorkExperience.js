@@ -25,7 +25,8 @@ const WorkExperience = ({
                 </Grid>
 
                 <Grid xs={12} sx={{ mt: 6 }}>
-                    <Typography 
+                    <Typography
+                        align='center'
                         color={theme.palette.titles.orange}
                         variant='h4'
                         sx={{ fontWeight: 'bold' }}
@@ -36,7 +37,12 @@ const WorkExperience = ({
 
                 {/* <Parallax translateX={[-24,100]}> */}
                     <Grid xs={12}>
-                        <Typography color='primary' variant='h5'>
+                        <Typography
+                            align='center'
+                            color='primary'
+                            variant='h5'
+                            sx={{ mb: 2 }}
+                        >
                             Some companies that I have previously worked for.
                         </Typography>
                     </Grid>

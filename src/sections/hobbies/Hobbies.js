@@ -15,14 +15,20 @@ const Hobbies = ({
     
     return (
         <Section background='tertiary'>
-            <Typography 
+            <Typography
+                align='center'
                 color={theme.palette.titles.orange}
                 variant='h4'
                 sx={{ fontWeight: 'bold' }}
             >
                 Hobbies
             </Typography>
-            <Typography color='primary' variant='h6' sx={{ mt: 2 }}>
+            <Typography
+                align='center'
+                color='primary'
+                variant='h5'
+                sx={{ mt: 2 }}
+            >
                 Some things I do for fun in my spare time!
             </Typography>
             <Box display='flex' flexDirection='column' alignItems='center'>

@@ -23,14 +23,20 @@ const TechnicalSkills = ({
 
                 {/* Section header */}
                 <Grid xs={12}>
-                    <Typography 
+                    <Typography
+                        align='center' 
                         color={theme.palette.titles.blue}
                         variant='h4'
                         sx={{ fontWeight: 'bold' }}
                     >
                         Languages and Frameworks
                     </Typography>
-                    <Typography color='secondary' variant='h6' sx={{ mt: 2, mb: 2 }}>
+                    <Typography
+                        align='center'
+                        color='secondary'
+                        variant='h5'
+                        sx={{ mt: 2, mb: 2 }}
+                    >
                         Throughout my university courses and previous work experiences, 
                         I have been introduced to—and familiarized myself with—a wide variety 
                         of programming languages. Here are some of my favourite ones, as well 
