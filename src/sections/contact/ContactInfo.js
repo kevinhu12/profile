@@ -19,7 +19,7 @@ const ContactInfo = ({
             <Grid container spacing={2} sx={{ overflow: 'hidden' }} justifyContent='center'>
                 <Grid xs={12}>
                     <Typography align='center' color='primary' variant='h5'>
-                        Feel free to reach out, I'd love to hear from you!
+                        I'd love to connect! Let's get in touch.
                     </Typography>
                 </Grid>
 

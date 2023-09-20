@@ -30,7 +30,7 @@ export const otherLanguages = [
     {
         name: 'C++ & C',
         level: 70,
-        description: 'I\'ve used these languages in almost all of my university programming courses, including designing algorithms for CS 341, coding projects in CS 246, and developing an operating system in CS 350.'
+        description: 'I\'ve used these languages in almost all of my university programming courses, including designing algorithms, creating object-oriented coding projects, and developing an operating system.'
     },
     { 
         name: 'Python',
