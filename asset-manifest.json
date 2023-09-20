@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/profile/static/css/main.aa4aee26.css",
-    "main.js": "/profile/static/js/main.8b6406f8.js",
+    "main.js": "/profile/static/js/main.15c62ed5.js",
     "static/media/destiny.png": "/profile/static/media/destiny.dc0100fb246ee4d70251.png",
     "static/media/athletics-soccer.jpg": "/profile/static/media/athletics-soccer.af79a69d9656a526446e.jpg",
     "static/media/headshot.jpg": "/profile/static/media/headshot.3842a4c066e0bb2eca9f.jpg",
@@ -12,10 +12,10 @@
     "static/media/iotum-logo.png": "/profile/static/media/iotum-logo.1634ca31f6bdbd21cd7e.png",
     "index.html": "/profile/index.html",
     "main.aa4aee26.css.map": "/profile/static/css/main.aa4aee26.css.map",
-    "main.8b6406f8.js.map": "/profile/static/js/main.8b6406f8.js.map"
+    "main.15c62ed5.js.map": "/profile/static/js/main.15c62ed5.js.map"
   },
   "entrypoints": [
     "static/css/main.aa4aee26.css",
-    "static/js/main.8b6406f8.js"
+    "static/js/main.15c62ed5.js"
   ]
 }
